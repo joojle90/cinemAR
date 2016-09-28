@@ -1,0 +1,12 @@
+.tabs {
+    tabbar {
+        line-height: 30px;
+
+        .tab-button[aria-selected=true] {
+            color: #f53d3d;
+        }
+        a {
+            padding-top: 15px;
+        }
+    }
+}

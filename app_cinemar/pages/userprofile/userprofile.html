@@ -1,0 +1,38 @@
+<!--
+  Generated template for the UseraccntPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar danger *navbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+        <button (click)="saveUser()">
+            <ion-icon name="checkmark"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-content class="useraccnt">
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Username</ion-label>
+            <ion-input type="text" [(ngModel)]="info.title"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label floating>Description</ion-label>
+            <ion-textarea [(ngModel)]="info.description"></ion-textarea>
+        </ion-item>
+        <!--
+        <ion-input stacked-label>
+            <ion-label>Title</ion-label>
+            <input type="text" [(ngModel)]="info.title">
+        </ion-input>
+        <ion-input stacked-label>
+            <ion-label>Description</ion-label>
+            <textarea [(ngModel)]="info.description"></textarea>
+        </ion-input>
+-->
+    </ion-list>
+</ion-content>

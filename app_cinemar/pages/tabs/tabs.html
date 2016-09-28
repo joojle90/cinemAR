@@ -1,0 +1,13 @@
+<!--
+<ion-tabs>
+  <ion-tab *ngFor="#tc of tabcontent;" id="{{tc.tabroot}}" [root]="root" tabTitle={{tc.tabtitle}} tabIcon={{tc.tabicon}}>
+  </ion-tab>
+</ion-tabs>
+-->
+
+<ion-tabs class="tabs">
+    <ion-tab [root]="tab1Root" tabTitle="Now" tabIcon="play"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="TopHits" tabIcon="arrow-up"></ion-tab>
+    <ion-tab [root]="tab3Root" tabTitle="Category" tabIcon="grid"></ion-tab>
+    <!--  <ion-tab [root]="tab4Root" tabTitle="About" tabIcon="gear-a"></ion-tab>-->
+</ion-tabs>

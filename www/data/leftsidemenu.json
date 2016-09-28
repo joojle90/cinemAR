@@ -1,0 +1,44 @@
+{
+    "leftsidemenu": [{
+        "name": "Main",
+        "submenu": [{
+            "idmenu": 1,
+            "title": "Home",
+            "icon": "home"
+  }, {
+            "idmenu": 2,
+            "title": "Promotion",
+            "icon": "ribbon",
+            "notif": 4
+    }]
+  }, {
+        "name": "Featured",
+        "submenu": [{
+            "idmenu": 3,
+            "title": "Fast Ticket",
+            "icon": "flash"
+    }, {
+            "idmenu": 4,
+            "title": "Cinema",
+            "icon": "easel",
+            "notif": 8
+    }, {
+            "idmenu": 5,
+            "title": "Coming Soon",
+            "icon": "flag",
+            "note": "New"
+    }]
+  }, {
+        "name": "Others",
+        "submenu": [{
+            "idmenu": 6,
+            "title": "FAQs",
+            "icon": "chatbubbles",
+            "note": "Common Ask"
+    }, {
+            "idmenu": 7,
+            "title": "About Us",
+            "icon": "people"
+    }]
+  }]
+}

@@ -1,0 +1,15 @@
+<ion-navbar danger *navbar>
+    <ion-title>Category</ion-title>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-navbar>
+
+<ion-content class="category">
+    <ion-card class="advanced-background" *ngFor="let gl of genrelist; let i = index">
+        <img [src]="genrelist[i].image" />
+        <p class="advanced-background-title">{{gl.genre}}</p>
+        <p class="advanced-background-subtitle">{{gl.movielist}} Movies Available</p>
+        <button myred class="advanced-background-details" (click)="moviebygenre(gl.genre)">More details</button>
+    </ion-card>
+</ion-content>

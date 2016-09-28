@@ -1,0 +1,74 @@
+.playvideo-page{
+    ion-icon.back-button-icon {
+        min-width: 25px;
+    }
+}
+.playvideo {
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    ion-card {
+
+        ion-item.item{
+            padding-left: 8px;
+        }
+    }
+    ion-card-content {
+        .card-title {
+            text-transform: uppercase;
+        }
+    }
+    ion-row {
+        padding: 0;
+        ion-col {
+            padding: 0;
+            ion-icon {
+                color: #d03e84;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.action-sheet-group{
+    button.action-sheet-button {
+        color: black;
+    }
+    ion-icon.ion-md-social-facebook {
+        color: #3D5A98;
+    }
+    ion-icon.ion-ios-social-facebook {
+        color: #3D5A98;
+    }
+    ion-icon.ion-md-social-twitter {
+        color: #408ECC;
+    }
+    ion-icon.ion-ios-social-twitter {
+        color: #408ECC;
+    }
+    ion-icon.ion-md-social-instagram {
+        color: #8C5F27;
+    }
+    ion-icon.ion-ios-social-instagram {
+        color: #8C5F27;
+    }
+    ion-icon.ion-md-social-pinterest {
+        color: #F13823;
+    }
+    ion-icon.ion-ios-social-pinterest {
+        color: #F13823;
+    }
+}

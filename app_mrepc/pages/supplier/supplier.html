@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Supplier</ion-title>
+
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="supplier">
+    <ion-list>
+        <button ion-item *ngFor="let spl of supplierlist; let i = index" (click)="supplierPage(spl.companyID)">
+            <ion-avatar item-left>
+                <img src="{{urllink}}/img/marketplace/supplier/image_{{spl.companyNo}}.jpg" onError="this.src='img/misc/no-image_thumbnail.png'">
+            </ion-avatar>
+            <h2>{{spl.companyName}}</h2>
+            <p>{{spl.companyNo}}</p>
+            <ion-badge item-right [hidden]="spl.itemList == 0">{{spl.itemList}}</ion-badge>
+            <ion-note item-right [hidden]="spl.itemList != 0">No items</ion-note>
+        </button>
+    </ion-list>
+</ion-content>

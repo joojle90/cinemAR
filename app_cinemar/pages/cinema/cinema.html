@@ -1,0 +1,48 @@
+<!--
+  Generated template for the TophitsPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar danger *navbar>
+    <ion-title>Cinema Show</ion-title>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-buttons end>
+        <button (click)="useraccount()">
+            <ion-icon ios="ios-person" md="md-person"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-content class="cinema">
+    <ion-card class="adv-map" *ngFor="let csl of cinemashowlist; let i = index">
+        <div style="position: relative">
+            <img [src]="cinemashowlist[i].image">
+            <button fab fab-right fab-top class="fab-map">
+                <ion-icon name='film'></ion-icon>
+            </button>
+        </div>
+        <ion-item>
+            <ion-icon subtle large item-left name='monitor'></ion-icon>
+            <h2>{{csl.name}}</h2>
+            <p>{{csl.address}}</p>
+        </ion-item>
+        <ion-item actions class="halldesc">
+            <span item-left myred class="item-bold">
+                <ion-icon name="podium" item-left></ion-icon>
+            </span>
+            <span item-left style="margin-right: 15px;">{{csl.hall}} hall</span>
+            <span item-left myred class="item-bold">
+                <ion-icon name="film" item-left></ion-icon>
+            </span>
+            <span item-left style="margin-right: 15px;">{{csl.movieshow}} movies</span>
+            <button myred clear item-right>
+                <ion-icon name='navigate'></ion-icon>
+                Find
+            </button>
+        </ion-item>
+    </ion-card>
+</ion-content>

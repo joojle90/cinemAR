@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Seminar</ion-title>
+
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="seminar">
+    <ion-card *ngFor="let sl of seminarlist; let i = index">
+        <div>
+            <img src="{{urllink}}/img/seminar/{{sl.image}}" onError="this.src='img/misc/no-image_event.jpg'">
+        </div>
+        <ion-item>
+            <p><strong primary>Start date : </strong>{{sl.eventdetail.startdate}}</p>
+            <h2>{{sl.eventdetail.name}}</h2>
+        </ion-item>
+        <ion-item actions>
+            <span item-left><strong secondary>Location : </strong>{{sl.eventdetail.location}}</span>
+            <button primary clear item-right (click)="seminarShare()">
+                <ion-icon name='share'></ion-icon>
+            </button>
+            <button primary clear item-right (click)="seminarBookmark()">
+                <ion-icon name='albums'></ion-icon>
+            </button>
+        </ion-item>
+    </ion-card>
+</ion-content>

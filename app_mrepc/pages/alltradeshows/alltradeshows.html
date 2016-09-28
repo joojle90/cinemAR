@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Trade Shows</ion-title>
+
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="alltradeshows">
+    <button clear *ngFor="let tl of tradeshowslist; let i = index" (click)="detailsPage(tradeshowslist[i])">
+        <ion-card class="allevent">
+            <div>
+                <img src="{{urllink}}/img/event/{{tl.image}}" onError="this.src='img/misc/no-image_event.jpg'"/>
+            </div>
+            <ion-item>
+                <h2>{{tradeshowslist[i].eventdetail.name}}</h2>
+                <p><strong secondary>Start from : </strong>
+                    <span danger>{{tradeshowslist[i].eventdetail.startdate}}</span>
+                    <strong> until </strong>
+                    <span danger>{{tradeshowslist[i].eventdetail.enddate}}</span>
+                </p>
+            </ion-item>
+        </ion-card>
+    </button>
+</ion-content>

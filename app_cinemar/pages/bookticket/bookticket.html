@@ -1,0 +1,92 @@
+<!--
+  Generated template for the BookticketPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar danger *navbar>
+    <ion-title>Book Ticket</ion-title>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-navbar>
+
+<ion-content class="bookticket">
+    <ion-list>
+        <div class="logo">
+          <img src="img/movietophits/ironman.jpg">
+        </div>
+        <ion-item>
+            <ion-label>Choose Regions</ion-label>
+            <ion-select [(ngModel)]="regions">
+                <ion-option value="bsr">Bangsar</ion-option>
+                <ion-option value="dmu">Damansara Utama</ion-option>
+                <ion-option value="kul">Kuala Lumpur</ion-option>
+                <ion-option value="pjy">Petaling Jaya</ion-option>
+                <ion-option value="pty">Putrajaya</ion-option>
+                <ion-option value="sha">Shah Alam</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Cinema</ion-label>
+            <ion-select [(ngModel)]="cinema">
+                <ion-option value="cmm01">CinemAR MALL 1</ion-option>
+                <ion-option value="cmm02">CinemAR MALL 2</ion-option>
+                <ion-option value="cmm03">CinemAR MALL 3</ion-option>
+                <ion-option value="cmm04">CinemAR MALL 4</ion-option>
+                <ion-option value="cmm05">CinemAR MALL 5</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Movie Name</ion-label>
+            <ion-select [(ngModel)]="moviename">
+                <ion-option value="CM001">The Angry Bird</ion-option>
+                <ion-option value="CM002">Ice Age 3</ion-option>
+                <ion-option value="CM003">Madagascar 3</ion-option>
+                <ion-option value="CM004">Penguins</ion-option>
+                <ion-option value="CM005">Ola Bola</ion-option>
+                <ion-option value="CM006">The Boy</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Select Date</ion-label>
+            <ion-select [(ngModel)]="date">
+                <ion-option checked="true" value="2016-02-16">Tue, 16-Feb-2016</ion-option>
+                <ion-option value="2016-02-17">Wed, 17-Feb-2016</ion-option>
+                <ion-option value="2016-02-18">Thu, 18-Feb-2016</ion-option>
+                <ion-option value="2016-02-19">Fri, 19-Feb-2016</ion-option>
+                <ion-option value="2016-02-20">Sat, 20-Feb-2016</ion-option>
+                <ion-option value="2016-02-21">Sun, 21-Feb-2016</ion-option>
+                <ion-option value="2016-02-22">Mon, 22-Feb-2016</ion-option>
+                <ion-option value="2016-02-23">Tue, 23-Feb-2016</ion-option>
+                <ion-option value="2016-02-24">Wed, 24-Feb-2016</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Select Time</ion-label>
+            <ion-select [(ngModel)]="time">
+                <ion-option value="153153">11:20AM (7 seat left)</ion-option>
+                <ion-option value="153165">12:00PM (20 seat left)</ion-option>
+                <ion-option value="152899">12:40PM (1 seat left)</ion-option>
+                <ion-option value="153151">01:35PM (5 seat left)</ion-option>
+                <ion-option value="153163">02:15PM (8 seat left)</ion-option>
+                <ion-option value="152897">03:05PM (11 seat left)</ion-option>
+                <ion-option value="153149">03:45PM (5 seat left)</ion-option>
+                <ion-option value="153161">04:25PM (4 seat left)</ion-option>
+                <ion-option value="152895">05:35PM (4 seat left)</ion-option>
+                <ion-option value="153147">06:00PM (3 seat left)</ion-option>
+                <ion-option value="153159">06:40PM (1 seat left)</ion-option>
+                <ion-option value="152893">08:00PM (9 seat left)</ion-option>
+                <ion-option value="153145">08:15PM (15 seat left)</ion-option>
+                <ion-option value="153157">08:55PM (12 seat left)</ion-option>
+                <ion-option value="153143">10:25PM (10 seat left)</ion-option>
+                <ion-option value="152891">10:30PM (6 seat left)</ion-option>
+            </ion-select>
+        </ion-item>
+
+    </ion-list>
+</ion-content>

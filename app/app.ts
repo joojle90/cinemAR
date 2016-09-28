@@ -1,25 +1,41 @@
-import {Component} from '@angular/core';
-import {Platform, ionicBootstrap} from 'ionic-angular';
-import {StatusBar} from 'ionic-native';
-import {TabsPage} from './pages/tabs/tabs';
+import { Component } from '@angular/core';
+import { Platform, ionicBootstrap, MenuController, Nav } from 'ionic-angular';
+import { StatusBar } from 'ionic-native';
+import { CinemarData } from './providers/cinemar-data/cinemar-data';
+import { NowshowingPage } from './pages/nowshowing/nowshowing';
 
+
+let component = [NowshowingPage];
 
 @Component({
-  template: '<ion-nav [root]="rootPage"></ion-nav>'
+    templateUrl: 'build/app.html'
 })
 export class MyApp {
+    urllink: string;
+    leftsidemenu: string[];
 
-  private rootPage: any;
+    private rootPage: any;
 
-  constructor(private platform: Platform) {
-    this.rootPage = TabsPage;
+    constructor(
+        private platform: Platform,
+        public mymenu: MenuController,
+        public cinemardata: CinemarData
+    ) {
+        this.rootPage = NowshowingPage;
 
-    platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
-    });
-  }
+        platform.ready().then(() => {
+            StatusBar.styleDefault();
+        });
+
+        //this.urllink = "http://cinemar.myxscan.net/api/Movie/";
+        this.loadleftsidemenu();
+    }
+
+    loadleftsidemenu() {
+        return this.cinemardata.getLeftsidemenu().then(data => {
+            this.leftsidemenu = data;
+        })
+    }
 }
 
-ionicBootstrap(MyApp);
+ionicBootstrap(MyApp, [CinemarData], { });

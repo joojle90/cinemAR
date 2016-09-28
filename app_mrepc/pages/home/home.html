@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>MREPC Menu</ion-title>
+
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-buttons end>
+            <button (click)="useraccountPage()">
+                <ion-icon ios="ios-person" md="md-person"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+<!--    <ion-spinner name="bubbles"></ion-spinner>-->
+    <ion-slides pager [options]="homeOptions">
+        <ion-slide *ngFor="let ce of comingsoonevent; let i = index;">
+            <button clear (click)="tradeshowspage(comingsoonevent[i])">
+                <ion-card class="eventcoming">
+                    <div>
+                        <img src="{{urllink}}/img/event/{{ce.image}}" onError="this.src='img/misc/no-image_event.jpg'"/>
+                    </div>
+                    <ion-item>
+                        <h2>{{comingsoonevent[i].eventdetail.name}}</h2>
+                        <p><strong secondary>Start from : </strong>
+                            <span danger>{{comingsoonevent[i].eventdetail.startdate}}</span>
+                            <strong> until </strong>
+                            <span danger>{{comingsoonevent[i].eventdetail.enddate}}</span>
+                        </p>
+                    </ion-item>
+                </ion-card>
+            </button>
+        </ion-slide>
+    </ion-slides>
+    <button clear *ngFor="let mm of mastermenu; let i = index" (click)="openmenuPage(i)">
+        <ion-card class="menubtn">
+            <img src="{{urllink}}/img/mastermenu/{{mm.image}}" onError="this.src='img/misc/no-image_event.jpg'"/>
+            <p class="card-title">{{mm.featuredmenu}}</p>
+            <p class="card-subtitle">{{mm.tagline}}</p>
+        </ion-card>
+    </button>
+</ion-content>
