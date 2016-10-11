@@ -42,8 +42,7 @@ export class CinemarData {
 
     getLeftsidemenu() {
         return this.load('leftsidemenu.json').then(data => {
-            console.log(data.leftsidemenu.submenu);
-            return data.leftsidemenu.submenu;
+            return data.leftsidemenu;
         });
     }
 

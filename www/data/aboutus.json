@@ -1,0 +1,11 @@
+{
+    "aboutus": [{
+        "appinfo": "CineMAR",
+        "description": "Mobile application for cinema using AR techology",
+        "createddate": "15 Feb 2016",
+        "createdby": "MyXlab team",
+        "contactus": "03 8928 0923",
+        "img": "img/aboutus.jpg",
+        "supportby": "UKM"
+  }]
+}

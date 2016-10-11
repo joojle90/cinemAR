@@ -1,0 +1,35 @@
+{
+    "movielist": [{
+        "movieid": "CNMV001",
+        "moviename": "The Angry Bird",
+        "image_small": "img/angrybird.jpg",
+        "image_potr": "img/angrybird.jpg",
+        "image_land": "img/angrybird.jpg",
+        "showtime": "29 Jan 2016",
+        "like": 140,
+        "duration": 130,
+        "discount": 0,
+        "moviedet": [{
+            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
+            "trailer": "4pIi4tMJoUs",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Cartoon"
+            }, {
+                "genrename": "Adventure"
+            }],
+            "lang": "English",
+            "directedby": "Clay Kaytis"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH002",
+            "cinemaname": "Great Mall KL"
+        },{
+            "cinemaid": "CNSH002",
+            "cinemaname": "Great Mall Selangor"
+        }]
+    }]
+}

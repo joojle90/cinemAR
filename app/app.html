@@ -9,12 +9,13 @@
     </ion-toolbar>
 
     <ion-content>
-        <ion-list>
-            <button menuClose ion-item *ngFor="let lsm of leftsidemenu; let i = index;" (click)="openPage(i)">
-                <ion-icon myicon item-left [name]="lsm.icon"></ion-icon>
-                {{lsm.title}}
-                <ion-note item-right [hidden]="note === null">{{lsm.note}}</ion-note>
-                <ion-badge item-right [hidden]="notif === null">{{lsm.notif}}</ion-badge>
+        <ion-list *ngFor="let lsm of leftsidemenu; let i = index;">
+            <ion-list-header>{{lsm.name}}</ion-list-header>
+            <button menuClose ion-item *ngFor="let sbm of lsm.submenu; let j = index;" (click)="openPage(j)">
+                <ion-icon myicon item-left [name]="sbm.icon"></ion-icon>
+                {{sbm.title}}
+                <ion-note item-right [hidden]="note === null">{{sbm.note}}</ion-note>
+                <ion-badge item-right [hidden]="notif === null">{{sbm.notif}}</ion-badge>
             </button>
         </ion-list>
     </ion-content>

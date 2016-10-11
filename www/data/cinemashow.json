@@ -1,0 +1,30 @@
+{
+    "cinemashow": [{
+        "cinemaid": "CNSH001",
+        "cinemaname": "Great Mall Putra",
+        "image_land": "img/cinemashow/cinema1.jpg",
+        "address": "Presint 15, 34000 Putrajaya",
+        "hall": 7,
+        "lat": 43.071584,
+        "lng": -89.380120,
+        "movieshow": [{
+            "movieid": "CNMV001",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "duration": 120,
+            "scheduleid": "CNSC001"
+        }, {
+            "movieid": "CNMV002",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "duration": 140,
+            "scheduleid": "CNSC001"
+        }, {
+            "movieid": "CNMV003",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "duration": 135,
+            "scheduleid": "CNSC001"
+        }]
+    }]
+}

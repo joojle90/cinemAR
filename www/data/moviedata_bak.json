@@ -77,7 +77,7 @@
         }]
     }],
 
-    "categorygenre": [{
+    "genrecategory": [{
         "genreid": "CNGR001",
         "genrename": "Adventure",
         "description": "Adventure description",
