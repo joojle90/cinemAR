@@ -12,6 +12,7 @@ import { TabsPage } from './pages/tabs/tabs';
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
     urllink: string;
+    activelink: any;
 
     private rootPage: Type = TabsPage;
 
@@ -35,6 +36,24 @@ export class MyApp {
             this.leftsidemenu = data;
             console.log(this.leftsidemenu);
         })
+    }
+
+    openPage(mypage: any) {
+        console.log(mypage);
+        if(mypage === 0) {
+            this.activelink = true;
+        } else {
+            this.activelink = false;
+        }
+//        for(var i = 0; i < this.leftsidemenu.length; i++) {
+//            console.log(this.leftsidemenu[i].submenu);
+//          if(this.leftsidemenu[i].name == "mypage.title") {
+//
+//          }
+//          else  {
+//              this.leftsidemenu[i].active = false;
+//          }
+//        }
     }
 }
 

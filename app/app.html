@@ -4,14 +4,15 @@
             <button clear menuClose (click)="userPage(0)">
                 <img src="http://www.gravatar.com/avatar?d=mm&s=140">
             </button>
-            <p>Hi, Bob</p>
+            <h6>Hi, Bob</h6>
+            <h6 whtext>email@yahoo.com</h6>
         </div>
     </ion-toolbar>
 
     <ion-content>
         <ion-list *ngFor="let lsm of leftsidemenu; let i = index;">
             <ion-list-header>{{lsm.name}}</ion-list-header>
-            <button menuClose ion-item *ngFor="let sbm of lsm.submenu; let j = index;" (click)="openPage(j)">
+            <button menuClose ion-item *ngFor="let sbm of lsm.submenu; let j = index;" (click)="openPage(j)" [ngClass]="{'sidebar_button_active':activelink}">
                 <ion-icon myicon item-left [name]="sbm.icon"></ion-icon>
                 {{sbm.title}}
                 <ion-note item-right [hidden]="note === null">{{sbm.note}}</ion-note>
