@@ -2,9 +2,9 @@
     "movielist": [{
         "movieid": "CNMV001",
         "moviename": "The Angry Bird",
-        "image_small": "angrybird.jpg",
-        "image_potr": "angrybird_potr.jpg",
-        "image_land": "angrybird_land.jpg",
+        "image_small": "the_angry_bird.jpg",
+        "image_potr": "the_angry_bird.jpg",
+        "image_land": "the_angry_bird.jpg",
         "showtime": "29 Jan 2016",
         "like": 140,
         "duration": 130,
@@ -30,32 +30,33 @@
         },{
             "cinemaid": "CNSH002",
             "cinemaname": "Great Mall Selangor"
-        }]
+        }],
+        "status": "active"
     },
     {
-        "movieid": "CNMV001",
-        "moviename": "The Angry Bird",
-        "image_small": "angrybird.jpg",
-        "image_potr": "angrybird_potr.jpg",
-        "image_land": "angrybird_land.jpg",
-        "showtime": "29 Jan 2016",
-        "like": 140,
-        "duration": 130,
+        "movieid": "CNMV002",
+        "moviename": "Suicide Squad",
+        "image_small": "suicide_squad.jpg",
+        "image_potr": "suicide_squad.jpg",
+        "image_land": "suicide_squad.jpg",
+        "showtime": "05 Aug 2016",
+        "like": 186,
+        "duration": 123,
         "discount": 0,
         "moviedetails": [{
-            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
-            "trailer": "4pIi4tMJoUs",
-            "audience": 13,
+            "synopsis": "Figuring they're all expendable, a U.S. intelligence officer decides to assemble a team of dangerous, incarcerated supervillains for a top-secret mission. Now armed with government weapons, Deadshot (Will Smith), Harley Quinn (Margot Robbie), Captain Boomerang, Killer Croc and other despicable inmates must learn to work together. Dubbed Task Force X, the criminals unite to battle a mysterious and powerful entity, while the diabolical Joker (Jared Leto) launches an evil agenda of his own.",
+            "trailer": "CmRih_VtVAs",
+            "audience": 18,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Action "
             }, {
                 "genrename": "Adventure"
             }],
             "lang": "English",
-            "directedby": "Clay Kaytis"
+            "directedby": "David Ayer"
         }],
         "cinemamovie": [{
-            "cinemaid": "CNSH001",
+            "cinemaid": "CNSH002",
             "cinemaname": "Great Mall Putra"
         },{
             "cinemaid": "CNSH002",
@@ -63,105 +64,279 @@
         },{
             "cinemaid": "CNSH002",
             "cinemaname": "Great Mall Selangor"
-        }]
+        }],
+        "status": "active"
     },
     {
-        "movieid": "CNMV001",
-        "moviename": "The Angry Bird",
-        "image_small": "angrybird.jpg",
-        "image_potr": "angrybird_potr.jpg",
-        "image_land": "angrybird_land.jpg",
-        "showtime": "29 Jan 2016",
-        "like": 140,
-        "duration": 130,
+        "movieid": "CNMV003",
+        "moviename": "The Legend of Tarzan",
+        "image_small": "the_legend_of_tarzan.jpg",
+        "image_potr": "the_legend_of_tarzan.jpg",
+        "image_land": "the_legend_of_tarzan.jpg",
+        "showtime": "01 Jul 2016",
+        "like": 260,
+        "duration": 170,
         "discount": 0,
         "moviedetails": [{
-            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
-            "trailer": "4pIi4tMJoUs",
+            "synopsis": "t's been nearly a decade since Tarzan (Alexander Skarsgård), also known as John Clayton III, left Africa to live in Victorian England with his wife Jane. Danger lurks on the horizon as Leon Rom (Christoph Waltz), a treacherous envoy for King Leopold, devises a scheme that lures the couple to the Congo. Rom plans to capture Tarzan and deliver him to an old enemy in exchange for diamonds. When Jane becomes a pawn in his devious plot, Tarzan must return to the jungle to save the woman he loves.",
+            "trailer": "Aj7ty6sViiU",
             "audience": 13,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Action "
             }, {
                 "genrename": "Adventure"
+            }, {
+                "genrename": "Drama"
             }],
             "lang": "English",
-            "directedby": "Clay Kaytis"
+            "directedby": "David Yates"
         }],
         "cinemamovie": [{
-            "cinemaid": "CNSH001",
-            "cinemaname": "Great Mall Putra"
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall KL"
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall Selangor"
-        }]
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
+        }],
+        "status": "active"
     },
     {
-        "movieid": "CNMV001",
-        "moviename": "The Angry Bird",
-        "image_small": "angrybird.jpg",
-        "image_potr": "angrybird_potr.jpg",
-        "image_land": "angrybird_land.jpg",
-        "showtime": "29 Jan 2016",
-        "like": 140,
-        "duration": 130,
+        "movieid": "CNMV004",
+        "moviename": "Deepwater Horizon",
+        "image_small": "deepwater_horizon.jpg",
+        "image_potr": "deepwater_horizon.jpg",
+        "image_land": "deepwater_horizon.jpg",
+        "showtime": "30 Sept 2016",
+        "like": 560,
+        "duration": 167,
         "discount": 0,
         "moviedetails": [{
-            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
-            "trailer": "4pIi4tMJoUs",
+            "synopsis": "On April 20, 2010, the Deepwater Horizon drilling rig explodes in the Gulf of Mexico, igniting a massive fireball that kills several crew members. Chief electronics technician Mike Williams (Mark Wahlberg) and his colleagues find themselves fighting for survival as the heat and the flames become stifling and overwhelming. Banding together, the co-workers must use their wits to make it out alive amid all the chaos.",
+            "trailer": "UPJyEHmM0",
             "audience": 13,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Action "
             }, {
                 "genrename": "Adventure"
+            }, {
+                "genrename": "Thriller"
             }],
             "lang": "English",
-            "directedby": "Clay Kaytis"
+            "directedby": "Peter Berg"
         }],
         "cinemamovie": [{
-            "cinemaid": "CNSH001",
-            "cinemaname": "Great Mall Putra"
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall KL"
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall Selangor"
-        }]
+            "cinemaid": "CNSH003",
+            "cinemaname": "IOI Putrajaya"
+        }],
+        "status": "active"
     },
     {
-        "movieid": "CNMV001",
-        "moviename": "The Angry Bird",
-        "image_small": "angrybird.jpg",
-        "image_potr": "angrybird_potr.jpg",
-        "image_land": "angrybird_land.jpg",
-        "showtime": "29 Jan 2016",
-        "like": 140,
-        "duration": 130,
+        "movieid": "CNMV005",
+        "moviename": "Lights Out",
+        "image_small": "lights_out.jpg",
+        "image_potr": "lights_out.jpg",
+        "image_land": "lights_out.jpg",
+        "showtime": "22 Jul 2016",
+        "like": 660,
+        "duration": 141,
         "discount": 0,
         "moviedetails": [{
-            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
-            "trailer": "4pIi4tMJoUs",
+            "synopsis": "When Rebecca (Teresa Palmer) left home, she thought that her childhood fears were behind her. As a young girl growing up, she was never really sure of what was real when the lights went out at night. Now, her little brother Martin (Gabriel Bateman) is experiencing the same unexplained and terrifying events that jeopardized her safety and sanity. Holding a mysterious attachment to their mother (Maria Bello), a supernatural entity has returned with a vengeance to torment the entire family.",
+            "trailer": "6LiKKFZyhRU",
             "audience": 13,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Horror "
             }, {
-                "genrename": "Adventure"
+                "genrename": "Thriller"
             }],
             "lang": "English",
-            "directedby": "Clay Kaytis"
+            "directedby": "David F. Sandberg"
         }],
         "cinemamovie": [{
-            "cinemaid": "CNSH001",
-            "cinemaname": "Great Mall Putra"
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall KL"
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall Selangor"
-        }]
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV006",
+        "moviename": "Munafik",
+        "image_small": "munafik.jpg",
+        "image_potr": "munafik.jpg",
+        "image_land": "munafik.jpg",
+        "showtime": "22 Jul 2016",
+        "like": 600,
+        "duration": 158,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "Adam is a Muslim medical practitioner who is unable to accept the fact that his wife is no longer in this world. Later on, he agrees to treat a depressed woman named Maria but strange and unsettling things start to happen.",
+            "trailer": "tLCIHiIYiLY",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror "
+            }],
+            "lang": "Malay",
+            "directedby": " Syamsul Yusof"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV007",
+        "moviename": "BoBoiBoy The Movie",
+        "image_small": "boBoiBoy_the_movie.jpg",
+        "image_potr": "boBoiBoy_the_movie.jpg",
+        "image_land": "boBoiBoy_the_movie.jpg",
+        "showtime": "30 Apr 2016",
+        "like": 26501,
+        "duration": 160,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "A group of alien treasure hunters named The Tengkotak has arrived on earth and kidnapped Ochobot in order to use him to locate an ancient and powerful Sfera Kuasa hiding on earth. BoBoiBoy and his super friends must now race against time to save Ochobot and uncover the secrets behind the Sfera Kuasa. Their journey will take them on an adventure filled with action, comedy, and beautiful locales.",
+            "trailer": "4shpW9bq2sE",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Animation "
+            },{
+                "genrename": "Action "
+            },{
+                "genrename": "Comedy "
+            }],
+            "lang": "Malay",
+            "directedby": " Nizam Razak"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Pavillion KL"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV008",
+        "moviename": "Aliff Dalam 7 Dimensi",
+        "image_small": "alif_dalam_7_dimensi.jpg",
+        "image_potr": "alif_dalam_7_dimensi.jpg",
+        "image_land": "alif_dalam_7_dimensi.jpg",
+        "showtime": "08 Sept 2016",
+        "like": 545,
+        "duration": 160,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "Aliff is a socially reclusive student who has an ability to see supernatural beings from another dimension. All along, he has learnt to ignore the spirits and never tells anybody about his ability, until he is unwittingly dragged into protecting his reckless, paranormal-seeking classmates Anna and Naim. Together, the three of them find themselves in a battle of epic proportions fighting other-worldly creatures.",
+            "trailer": "Nt50rVycjoA",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror "
+            },{
+                "genrename": "Action "
+            }],
+            "lang": "Malay",
+            "directedby": " Faisal Ishak"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV009",
+        "moviename": "Volkswagen Kuning",
+        "image_small": "volkswagen_kuning.jpg",
+        "image_potr": "volkswagen_kuning.jpg",
+        "image_land": "volkswagen_kuning.jpg",
+        "showtime": "22 Sept 2016",
+        "like": 555,
+        "duration": 138,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "A story that follows the famous urban legend about a mysterious yellow-colored Volkswagen seen on Malaysia's Karak highway. A couple that is on the way to a village meets an unexpected event with the Volkswagen that will haunt their lives.",
+            "trailer": "52MgKOqJKKo",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror "
+            }],
+            "lang": "Malay",
+            "directedby": "Shadan Hashim"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0010",
+        "moviename": "Mat Moto",
+        "image_small": "mat_moto.jpg",
+        "image_potr": "mat_moto.jpg",
+        "image_land": "mat_moto.jpg",
+        "showtime": "14 Jan 2016",
+        "like": 453,
+        "duration": 150,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "The film follows the journey of fellow mat moto, also known as bikers, who share the same interest in motorsport. On a journey across Malaysia, the bikers discover the true meaning of friendship and the joy of sharing the same hobby.",
+            "trailer": "cAZaaIlyVyU",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "lang": "Malay",
+            "directedby": "Pekin Ibrahim"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Alamanda Putrajaya"
+        }],
+        "status": "active"
     }]
 }

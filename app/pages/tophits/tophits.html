@@ -9,7 +9,6 @@
 </ion-header>
 
 <ion-content class="tophits">
-
     <ion-card *ngFor="let thl of tophitslist; let i = index">
         <a clear (click)="watchtrailer(thl.moviedetails[0])">
             <img src="img/poster_land/{{thl.image_land}}" />
@@ -22,18 +21,4 @@
             #{{i+1}}
         </button>
     </ion-card>
-<!--
-    <ion-card *ngFor="let th of tophitlist; #i = index">
-        <a clear (click)="watchtrailer(tophitlist[i].moviedetails[0])">
-            <img [src]="tophitlist[i].image" />
-        </a>
-        <div class="card-title">{{tophitlist[i].moviedet[0].name}}</div>
-        <p class="like-count">
-            <ion-icon name='heart'></ion-icon>&nbsp;{{th.like}} likes
-        </p>
-        <button fab fab-right fab-bottom class="tophits-rank" (click)="bookticket()">
-            #{{i+1}}
-        </button>
-    </ion-card>
--->
 </ion-content>

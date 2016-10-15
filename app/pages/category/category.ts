@@ -1,19 +1,26 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 
-/*
-  Generated class for the CategoryPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
-  templateUrl: 'build/pages/category/category.html',
+    templateUrl: 'build/pages/category/category.html',
 })
 export class CategoryPage {
+    categorylist: string[];
 
-  constructor(private navCtrl: NavController) {
+    constructor(
+        private navCtrl: NavController,
+        public cinemardata: CinemarData
+    ) {
+        this.loadcategorylist();
+    }
 
-  }
+    loadcategorylist() {
+        return this.cinemardata.getCategorylist().then(data => {
+            this.categorylist = data.sort((a, b) => {
+                return a.genrename.localeCompare(b.genrename)
+            })
+        })
+    }
 
 }

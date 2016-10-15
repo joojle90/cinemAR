@@ -11,7 +11,7 @@ import { ComingsoonPage } from './pages/comingsoon/comingsoon';
 import { FaqsPage } from './pages/faqs/faqs';
 import { AboutPage } from './pages/about/about';
 
-let component = [NowshowingPage, PromotionPage, FastticketPage, CinemaPage,
+let component = [TabsPage, PromotionPage, FastticketPage, CinemaPage,
                  ComingsoonPage, FaqsPage, AboutPage];
 let mymenu = ["Home", "Promotion", "Fast Ticket", "Cinema", "Coming Soon",
                  "FAQs", "About Us"];
@@ -48,14 +48,17 @@ export class MyApp {
         })
     }
 
-    openPage(mypage: any, pageid) {
+    openPage(mypage: any) {
+        let pageid;
         for (var i in mymenu) {
             if(mymenu[i] === mypage) {
                 this.activemenu[i] = true;
+                pageid = i;
             } else {
                 this.activemenu[i] = false;
             }
         }
+        this.nav.setRoot(component[pageid]);
     }
 }
 

@@ -1,5 +1,5 @@
 {
-    "movielist": [{
+    "promotions": [{
         "movieid": "CNMV001",
         "moviename": "The Angry Bird",
         "image_small": "the_angry_bird.jpg",
@@ -8,7 +8,7 @@
         "showtime": "29 Jan 2016",
         "like": 640,
         "duration": 130,
-        "discount": 0,
+        "discount": 30,
         "moviedetails": [{
             "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
             "trailer": "4pIi4tMJoUs",
@@ -148,7 +148,7 @@
         "showtime": "22 Jul 2016",
         "like": 660,
         "duration": 141,
-        "discount": 0,
+        "discount": 15,
         "moviedetails": [{
             "synopsis": "When Rebecca (Teresa Palmer) left home, she thought that her childhood fears were behind her. As a young girl growing up, she was never really sure of what was real when the lights went out at night. Now, her little brother Martin (Gabriel Bateman) is experiencing the same unexplained and terrifying events that jeopardized her safety and sanity. Holding a mysterious attachment to their mother (Maria Bello), a supernatural entity has returned with a vengeance to torment the entire family.",
             "trailer": "6LiKKFZyhRU",
@@ -250,7 +250,7 @@
         "showtime": "08 Sept 2016",
         "like": 545,
         "duration": 160,
-        "discount": 0,
+        "discount": 20,
         "moviedetails": [{
             "synopsis": "Aliff is a socially reclusive student who has an ability to see supernatural beings from another dimension. All along, he has learnt to ignore the spirits and never tells anybody about his ability, until he is unwittingly dragged into protecting his reckless, paranormal-seeking classmates Anna and Naim. Together, the three of them find themselves in a battle of epic proportions fighting other-worldly creatures.",
             "trailer": "Nt50rVycjoA",
@@ -316,7 +316,7 @@
         "showtime": "14 Jan 2016",
         "like": 453,
         "duration": 150,
-        "discount": 0,
+        "discount": 10,
         "moviedetails": [{
             "synopsis": "The film follows the journey of fellow mat moto, also known as bikers, who share the same interest in motorsport. On a journey across Malaysia, the bikers discover the true meaning of friendship and the joy of sharing the same hobby.",
             "trailer": "cAZaaIlyVyU",

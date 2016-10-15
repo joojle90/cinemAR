@@ -58,5 +58,17 @@ export class CinemarData {
         });
     }
 
+    getCategorylist() {
+        return this.load('category.json').then(data => {
+            return data.categories;
+        });
+    }
+
+    getPromotionlist() {
+        return this.load('promotion.json').then(data => {
+            return data.promotions;
+        });
+    }
+
 }
 

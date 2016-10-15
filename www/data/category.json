@@ -1,0 +1,43 @@
+{
+    "categories": [{
+        "genreid": "CNGR001",
+        "genrename": "Adventure",
+        "description": "Adventure description",
+        "image": "adventure.jpg"
+    },{
+        "genreid": "CNGR002",
+        "genrename": "Sci-fi",
+        "description": "Sci-fi description",
+        "image": "sci-fi.jpg"
+    },{
+        "genreid": "CNGR003",
+        "genrename": "Horror",
+        "description": "Horror description",
+        "image": "horror.jpg"
+    },{
+        "genreid": "CNGR004",
+        "genrename": "Action",
+        "description": "Action description",
+        "image": "action.jpg"
+    },{
+        "genreid": "CNGR005",
+        "genrename": "Thriller",
+        "description": "Thriller description",
+        "image": "thriller.jpg"
+    },{
+        "genreid": "CNGR006",
+        "genrename": "Romance",
+        "description": "Romance description",
+        "image": "romance.jpg"
+    },{
+        "genreid": "CNGR007",
+        "genrename": "Fantasy",
+        "description": "Fantasy description",
+        "image": "fantasy.jpg"
+    },{
+        "genreid": "CNGR008",
+        "genrename": "Animation",
+        "description": "Cartoon description",
+        "image": "animation.jpg"
+    }]
+}

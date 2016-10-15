@@ -19,7 +19,10 @@ export class TophitsPage {
 
     loadtophitslist() {
         return this.cinemardata.getTophitslist().then(data => {
-            this.tophitslist = data;
+            this.tophitslist = data.sort((a,b) => {
+                    return b.like - a.like;
+            });
+            this.tophitslist = this.tophitslist.slice(0, 10);
             console.log(this.tophitslist);
         })
     }
