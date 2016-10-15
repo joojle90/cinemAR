@@ -1,19 +1,39 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
 
-/*
-  Generated class for the TophitsPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
-  templateUrl: 'build/pages/tophits/tophits.html',
+    templateUrl: 'build/pages/tophits/tophits.html',
 })
 export class TophitsPage {
+    tophitslist: string[];
 
-  constructor(private navCtrl: NavController) {
+    constructor(
+        private navCtrl: NavController,
+        public cinemardata: CinemarData
+    ) {
+        this.loadtophitslist();
+    }
 
-  }
+    loadtophitslist() {
+        return this.cinemardata.getTophitslist().then(data => {
+            this.tophitslist = data;
+            console.log(this.tophitslist);
+        })
+    }
+
+    bookticket() {
+        this.navCtrl.push(BookticketPage);
+    }
+
+    watchtrailer(moviedetails) {
+        var thetrailer = `https://www.youtube.com/embed/${moviedetails.trailer}`;
+        this.navCtrl.push(MoviedetailsPage, {
+            trailerlinks: thetrailer,
+            moviedetails: moviedetails
+        });
+    }
 
 }

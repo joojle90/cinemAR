@@ -1,3 +1,49 @@
 .tophits {
+    ion-card {
+        position: relative;
+        text-align: center;
+        height: 48vw;
+        margin: 5px;
+        width: calc(100% - 10px);
 
+        img {
+            position: relative;
+//            bottom: 100px;
+            filter: brightness(80%);
+        }
+
+        p.like-count {
+            text-align: left;
+            font-size: 1.0em;
+            position: absolute;
+            top: 85%;
+            width: 100%;
+            left: 10px;
+            font-weight: bold;
+            color: #00ff23 !important;
+        }
+    }
+    .card-title {
+        position: absolute;
+        top: 40%;
+        font-size: 2.0em;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0 40px;
+    }
+    .tophits-rank {
+        font-size: 1em;
+        background-color: #f34747;
+    }
+    [fab-right] {
+        right: 10px;
+    }
+
+    [fab-bottom] {
+        top: 60%;
+    }
 }

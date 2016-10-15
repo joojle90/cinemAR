@@ -3,25 +3,25 @@
         "genreid": "CNGR001",
         "genrename": "Adventure",
         "description": "Adventure description",
-        "image": "img/movcategory/adventure.jpg",
+        "image": "adventure.jpg",
         "movielist": [{
             "movieid": "CNMV001",
-            "image_land": "img/angrybird.jpg",
             "moviename": "The Angry Bird",
-            "showtime": "29 Jan 2016",
-            "like": 120
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 130
         }, {
             "movieid": "CNMV002",
-            "image_land": "img/angrybird.jpg",
             "moviename": "The Angry Bird",
-            "showtime": "29 Aug 2016",
-            "like": 178
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 110
         }, {
             "movieid": "CNMV003",
-            "image_land": "img/angrybird.jpg",
             "moviename": "The Angry Bird",
-            "showtime": "29 Sep 2016",
-            "like": 150
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 120
         }]
     }]
 }

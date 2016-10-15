@@ -46,5 +46,17 @@ export class CinemarData {
         });
     }
 
+    getMovielist() {
+        return this.load('movielist.json').then(data => {
+            return data.movielist;
+        });
+    }
+
+    getTophitslist() {
+        return this.load('tophits.json').then(data => {
+            return data.tophits;
+        });
+    }
+
 }
 

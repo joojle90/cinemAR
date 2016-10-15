@@ -3,8 +3,18 @@ import { Platform, ionicBootstrap, MenuController, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import { CinemarData } from './providers/cinemar-data/cinemar-data';
 import { TabsPage } from './pages/tabs/tabs';
+import { NowshowingPage } from './pages/nowshowing/nowshowing';
+import { PromotionPage } from './pages/promotion/promotion';
+import { FastticketPage } from './pages/fastticket/fastticket';
+import { CinemaPage } from './pages/cinema/cinema';
+import { ComingsoonPage } from './pages/comingsoon/comingsoon';
+import { FaqsPage } from './pages/faqs/faqs';
+import { AboutPage } from './pages/about/about';
 
-//let component = [NowshowingPage];
+let component = [NowshowingPage, PromotionPage, FastticketPage, CinemaPage,
+                 ComingsoonPage, FaqsPage, AboutPage];
+let mymenu = ["Home", "Promotion", "Fast Ticket", "Cinema", "Coming Soon",
+                 "FAQs", "About Us"];
 
 @Component({
     templateUrl: 'build/app.html'
@@ -12,7 +22,7 @@ import { TabsPage } from './pages/tabs/tabs';
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
     urllink: string;
-    activelink: any;
+    activemenu: any = [true, false, false, false, false, false, false];
 
     private rootPage: Type = TabsPage;
 
@@ -38,23 +48,15 @@ export class MyApp {
         })
     }
 
-    openPage(mypage: any) {
-        console.log(mypage);
-        if(mypage === 0) {
-            this.activelink = true;
-        } else {
-            this.activelink = false;
+    openPage(mypage: any, pageid) {
+        for (var i in mymenu) {
+            if(mymenu[i] === mypage) {
+                this.activemenu[i] = true;
+            } else {
+                this.activemenu[i] = false;
+            }
         }
-//        for(var i = 0; i < this.leftsidemenu.length; i++) {
-//            console.log(this.leftsidemenu[i].submenu);
-//          if(this.leftsidemenu[i].name == "mypage.title") {
-//
-//          }
-//          else  {
-//              this.leftsidemenu[i].active = false;
-//          }
-//        }
     }
 }
 
-ionicBootstrap(MyApp, [CinemarData], { });
+ionicBootstrap(MyApp, [CinemarData], { tabsHideOnSubPages:"true" });

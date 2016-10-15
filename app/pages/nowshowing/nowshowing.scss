@@ -1,3 +1,60 @@
 .nowshowing {
+    ion-row {
+        padding: 4px;
 
+        ion-col {
+            padding: 4px;
+        }
+    }
+    ion-card {
+        margin: 0px 0px 10px 0px;
+        width: calc(100% - 0px);
+
+        ion-card-content {
+            padding: 0;
+
+            button {
+                padding: 0 0.1em;
+            }
+        }
+
+        ion-item.item {
+            [item-left], [item-right] {
+                margin: 0;
+            }
+        }
+        ion-item {
+            p {
+                font-weight: bold;
+                min-width: 200px;
+                color: #2ab700;
+            }
+            .item-inner {
+                padding-right: 0;
+            }
+            .item-button {
+                padding: 0 1.4em;
+            }
+            ion-label {
+                margin: 0;
+            }
+        }
+    }
+    ion-row + ion-row {
+        margin-top: -18px;
+    }
+}
+
+body.ios {
+    ion-card {
+        ion-item.item {
+                padding-left: 8px;
+        }
+        ion-item {
+            .item-button {
+                padding: 0 0.8em;
+            }
+        }
+
+    }
 }

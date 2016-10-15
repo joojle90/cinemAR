@@ -1,5 +1,5 @@
 {
-    "movielist": [{
+    "tophits": [{
         "movieid": "CNMV001",
         "moviename": "The Angry Bird",
         "image_small": "angrybird.jpg",
@@ -72,7 +72,7 @@
         "image_potr": "angrybird_potr.jpg",
         "image_land": "angrybird_land.jpg",
         "showtime": "29 Jan 2016",
-        "like": 140,
+        "like": 120,
         "duration": 130,
         "discount": 0,
         "moviedetails": [{
@@ -105,7 +105,7 @@
         "image_potr": "angrybird_potr.jpg",
         "image_land": "angrybird_land.jpg",
         "showtime": "29 Jan 2016",
-        "like": 140,
+        "like": 110,
         "duration": 130,
         "discount": 0,
         "moviedetails": [{
@@ -138,7 +138,7 @@
         "image_potr": "angrybird_potr.jpg",
         "image_land": "angrybird_land.jpg",
         "showtime": "29 Jan 2016",
-        "like": 140,
+        "like": 100,
         "duration": 130,
         "discount": 0,
         "moviedetails": [{
