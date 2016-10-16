@@ -20,7 +20,7 @@
             <p class="promotion-disc">{{pml.discount}}% Off</p>
             <img src="img/poster_potr/{{pml.image_potr}}" class="slide-image" />
 
-            <button fab darklight fab-bottom fab-right (click)="watchtrailer(pml.moviedetails[0])" style="z-index:100">
+            <button fab darklight fab-bottom fab-right (click)="watchtrailer(promotionlist[i], pml.moviedetails[0])" style="z-index:100">
                 <ion-icon name='play' is-active="false"></ion-icon>
             </button>
         </ion-slide>

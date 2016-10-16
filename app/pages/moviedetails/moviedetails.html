@@ -13,12 +13,14 @@
 <ion-content class="moviedetails">
 
     <ion-card>
-<!--
         <div id="elastic-header" class="video-container">
-            <iframe width="560" height="315" [src]="getmoviedetails.trailerlinks" frameborder="0" allowfullscreen>
-            </iframe>
+            <iframe width="100%" height="315" [src]="youtubelink" frameborder="0" allowfullscreen></iframe>
         </div>
--->
+        <span class="tags">
+            <span class="price-tag">
+                <p [hidden]="getmoviedetails.discount === 0">{{getmoviedetails.discount}}%</p>
+            </span>
+        </span>
         <ion-card-content>
             <p class="card-title">PG{{getmoviedetails.moviedetails.audience}}</p>
 

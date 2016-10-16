@@ -8,7 +8,7 @@
         "showtime": "29 Jan 2016",
         "like": 640,
         "duration": 130,
-        "discount": 0,
+        "discount": 20,
         "moviedetails": [{
             "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
             "trailer": "4pIi4tMJoUs",
@@ -84,7 +84,7 @@
         "showtime": "01 Jul 2016",
         "like": 260,
         "duration": 170,
-        "discount": 0,
+        "discount": 15,
         "moviedetails": [{
             "synopsis": "t's been nearly a decade since Tarzan (Alexander Skarsgård), also known as John Clayton III, left Africa to live in Victorian England with his wife Jane. Danger lurks on the horizon as Leon Rom (Christoph Waltz), a treacherous envoy for King Leopold, devises a scheme that lures the couple to the Congo. Rom plans to capture Tarzan and deliver him to an old enemy in exchange for diamonds. When Jane becomes a pawn in his devious plot, Tarzan must return to the jungle to save the woman he loves.",
             "trailer": "Aj7ty6sViiU",
@@ -127,7 +127,7 @@
         "discount": 0,
         "moviedetails": [{
             "synopsis": "On April 20, 2010, the Deepwater Horizon drilling rig explodes in the Gulf of Mexico, igniting a massive fireball that kills several crew members. Chief electronics technician Mike Williams (Mark Wahlberg) and his colleagues find themselves fighting for survival as the heat and the flames become stifling and overwhelming. Banding together, the co-workers must use their wits to make it out alive amid all the chaos.",
-            "trailer": "UPJyEHmM0",
+            "trailer": "8yASbM8M2vg",
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
@@ -238,7 +238,7 @@
         "showtime": "30 Apr 2016",
         "like": 265,
         "duration": 160,
-        "discount": 0,
+        "discount": 20,
         "moviedetails": [{
             "synopsis": "A group of alien treasure hunters named The Tengkotak has arrived on earth and kidnapped Ochobot in order to use him to locate an ancient and powerful Sfera Kuasa hiding on earth. BoBoiBoy and his super friends must now race against time to save Ochobot and uncover the secrets behind the Sfera Kuasa. Their journey will take them on an adventure filled with action, comedy, and beautiful locales.",
             "trailer": "4shpW9bq2sE",
@@ -344,7 +344,7 @@
         "showtime": "14 Jan 2016",
         "like": 453,
         "duration": 150,
-        "discount": 0,
+        "discount": 10,
         "moviedetails": [{
             "synopsis": "The film follows the journey of fellow mat moto, also known as bikers, who share the same interest in motorsport. On a journey across Malaysia, the bikers discover the true meaning of friendship and the joy of sharing the same hobby.",
             "trailer": "cAZaaIlyVyU",

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, LoadingController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
 
@@ -14,10 +14,30 @@ export class NowshowingPage {
 
     constructor(
         private navCtrl: NavController,
+        private loadingCtrl: LoadingController,
         public cinemardata: CinemarData
     ) {
-        this.loadmovielist();
+        this.presentLoadingData();
     }
+
+//    ngOnInit() {
+//        let loader = this.loadingCtrl.create({
+//            content: "Please wait..." ,
+//            duration: 3000,
+//            dismissOnPageChange: true
+//        });
+//        try {
+//            loader.present();
+//        } catch (e) {
+//
+//        }
+////            loader.present();
+//        this.loadmovielist().then(() => {
+//            setTimeout(() => {
+//                loader.dismiss();
+//             }, 3000);
+//        });
+//    }
 
     loadmovielist() {
         return this.cinemardata.getMovielist().then(data => {
@@ -37,13 +57,30 @@ export class NowshowingPage {
     }
 
     watchtrailer(movieitems, moviedetails) {
-        let thetrailer = `https://www.youtube.com/embed/${moviedetails.trailer}`;
         this.navCtrl.push(MoviedetailsPage, {
-            trailerlinks: thetrailer,
             showtimes: movieitems.showtime,
             movienames: movieitems.moviename,
             likes: movieitems.like,
-            moviedetails: moviedetails
+            moviedetails: moviedetails,
+            discount: movieitems.discount
         });
+    }
+
+    presentLoadingData() {
+//        setTimeout(() => {
+            let loader = this.loadingCtrl.create({
+                content: "Please wait..."
+            });
+            //loader.present();
+            try {
+                loader.present();
+            } catch (e) {
+                console.log(e);
+            }
+
+            this.loadmovielist().then(() => {
+                loader.dismiss();
+            });
+//        }, 3000);
     }
 }

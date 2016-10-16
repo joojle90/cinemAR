@@ -21,6 +21,9 @@
 		2361546D44394D0E8AB78E02 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E16A92CD548429ECB0D32 /* CDVViewController+SplashScreen.m */; };
 		13F4AAED6BD847C590D6EDE6 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B4DAB95430D04B4BB327E63C /* CDVStatusBar.m */; };
 		CBB4E44E8E8C4CDF86C794AD /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 82E8F83A4B244EC89DD3E2AA /* IonicKeyboard.m */; };
+		2F95304B495F484F81010230 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E08029FB541E4790AF6DD318 /* MediaPlayer.framework */; };
+		D60C7D9835E54CE49E0A1F85 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B5DCFEC07E4EADB4DCC30F /* AVFoundation.framework */; };
+		A8ECD75106BB427DAA835C6B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED46FEEC913437880A956DC /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		A51A8C80B5FE48D8B34A61AA /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		82E8F83A4B244EC89DD3E2AA /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		E3681BD9C74E4944B8226C9D /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E08029FB541E4790AF6DD318 /* MediaPlayer.framework */ = {isa = PBXFileReference; name = "MediaPlayer.framework"; path = "System/Library/Frameworks/MediaPlayer.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		20B5DCFEC07E4EADB4DCC30F /* AVFoundation.framework */ = {isa = PBXFileReference; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		EED46FEEC913437880A956DC /* JavaScriptCore.framework */ = {isa = PBXFileReference; name = "JavaScriptCore.framework"; path = "System/Library/Frameworks/JavaScriptCore.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				2F95304B495F484F81010230 /* MediaPlayer.framework in Frameworks */,
+				D60C7D9835E54CE49E0A1F85 /* AVFoundation.framework in Frameworks */,
+				A8ECD75106BB427DAA835C6B /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +158,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E08029FB541E4790AF6DD318 /* MediaPlayer.framework */,
+				20B5DCFEC07E4EADB4DCC30F /* AVFoundation.framework */,
+				EED46FEEC913437880A956DC /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
