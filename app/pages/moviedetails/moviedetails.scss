@@ -1,3 +1,48 @@
 .moviedetails {
+    ion-card {
+        h1 {
+            color: $textcolor;
+            padding: 0 0 20px;
+            text-transform: capitalize;
+        }
+        ion-item.item{
+            padding-left: 8px;
+        }
+        p {
+            color: #fff;
+        }
+        background: #e96443;
+        background: -webkit-linear-gradient(to left, #e96443 , #904e95);
+        background: linear-gradient(to left, #e96443 , #904e95);
+    }
+    ion-card-content {
+        h5 {
+            line-height: 30px;
+            font-weight: bold;
+        }
+        p {
+            white-space: pre-line;
+        }
+    }
+    ion-row {
+        padding: 5px;
+        ion-col {
+            padding: 0;
+            color: #fff;
+            ion-icon {
+                color: #ffd75c;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: inherit;
+            }
+            ion-icon {
+                padding-right: 5px;
+            }
+            span {
+                color: #00ffb1;
+            }
+        }
+    }
 
 }

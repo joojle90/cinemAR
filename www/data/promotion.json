@@ -8,17 +8,21 @@
         "showtime": "29 Jan 2016",
         "like": 640,
         "duration": 130,
-        "discount": 30,
+        "discount": 20,
         "moviedetails": [{
             "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
             "trailer": "4pIi4tMJoUs",
             "audience": 13,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Animation"
             }, {
                 "genrename": "Adventure"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "Clay Kaytis"
         }],
         "cinemamovie": [{
@@ -48,11 +52,15 @@
             "trailer": "CmRih_VtVAs",
             "audience": 18,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David Ayer"
         }],
         "cinemamovie": [{
@@ -76,19 +84,23 @@
         "showtime": "01 Jul 2016",
         "like": 260,
         "duration": 170,
-        "discount": 0,
+        "discount": 15,
         "moviedetails": [{
             "synopsis": "t's been nearly a decade since Tarzan (Alexander Skarsgård), also known as John Clayton III, left Africa to live in Victorian England with his wife Jane. Danger lurks on the horizon as Leon Rom (Christoph Waltz), a treacherous envoy for King Leopold, devises a scheme that lures the couple to the Congo. Rom plans to capture Tarzan and deliver him to an old enemy in exchange for diamonds. When Jane becomes a pawn in his devious plot, Tarzan must return to the jungle to save the woman he loves.",
             "trailer": "Aj7ty6sViiU",
             "audience": 13,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }, {
                 "genrename": "Drama"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David Yates"
         }],
         "cinemamovie": [{
@@ -118,13 +130,17 @@
             "trailer": "UPJyEHmM0",
             "audience": 13,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }, {
                 "genrename": "Thriller"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "Peter Berg"
         }],
         "cinemamovie": [{
@@ -148,17 +164,21 @@
         "showtime": "22 Jul 2016",
         "like": 660,
         "duration": 141,
-        "discount": 15,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "When Rebecca (Teresa Palmer) left home, she thought that her childhood fears were behind her. As a young girl growing up, she was never really sure of what was real when the lights went out at night. Now, her little brother Martin (Gabriel Bateman) is experiencing the same unexplained and terrifying events that jeopardized her safety and sanity. Holding a mysterious attachment to their mother (Maria Bello), a supernatural entity has returned with a vengeance to torment the entire family.",
             "trailer": "6LiKKFZyhRU",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }, {
                 "genrename": "Thriller"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David F. Sandberg"
         }],
         "cinemamovie": [{
@@ -188,9 +208,13 @@
             "trailer": "tLCIHiIYiLY",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": " Syamsul Yusof"
         }],
         "cinemamovie": [{
@@ -214,7 +238,7 @@
         "showtime": "30 Apr 2016",
         "like": 265,
         "duration": 160,
-        "discount": 0,
+        "discount": 20,
         "moviedetails": [{
             "synopsis": "A group of alien treasure hunters named The Tengkotak has arrived on earth and kidnapped Ochobot in order to use him to locate an ancient and powerful Sfera Kuasa hiding on earth. BoBoiBoy and his super friends must now race against time to save Ochobot and uncover the secrets behind the Sfera Kuasa. Their journey will take them on an adventure filled with action, comedy, and beautiful locales.",
             "trailer": "4shpW9bq2sE",
@@ -222,11 +246,11 @@
             "genre": [{
                 "genrename": "Animation "
             },{
-                "genrename": "Action "
-            },{
-                "genrename": "Comedy "
+                "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": " Nizam Razak"
         }],
         "cinemamovie": [{
@@ -250,17 +274,19 @@
         "showtime": "08 Sept 2016",
         "like": 545,
         "duration": 160,
-        "discount": 20,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "Aliff is a socially reclusive student who has an ability to see supernatural beings from another dimension. All along, he has learnt to ignore the spirits and never tells anybody about his ability, until he is unwittingly dragged into protecting his reckless, paranormal-seeking classmates Anna and Naim. Together, the three of them find themselves in a battle of epic proportions fighting other-worldly creatures.",
             "trailer": "Nt50rVycjoA",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             },{
-                "genrename": "Action "
+                "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": " Faisal Ishak"
         }],
         "cinemamovie": [{
@@ -290,9 +316,11 @@
             "trailer": "52MgKOqJKKo",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": "Shadan Hashim"
         }],
         "cinemamovie": [{
@@ -324,7 +352,9 @@
             "genre": [{
                 "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": "Pekin Ibrahim"
         }],
         "cinemamovie": [{

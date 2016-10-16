@@ -1,51 +1,85 @@
 <ion-header>
-
     <ion-navbar>
-        <ion-title>Movie Details</ion-title>
-
+        <ion-title>{{getmoviedetails.movienames}}</ion-title>
         <ion-buttons end>
             <button (click)="presentActionSheet()">
                 <ion-icon ios="ios-share-alt" md="md-share-alt"></ion-icon>
             </button>
         </ion-buttons>
     </ion-navbar>
-
 </ion-header>
 
 
 <ion-content class="moviedetails">
-<!--
+
     <ion-card>
+<!--
         <div id="elastic-header" class="video-container">
             <iframe width="560" height="315" [src]="getmoviedetails.trailerlinks" frameborder="0" allowfullscreen>
             </iframe>
         </div>
+-->
         <ion-card-content>
             <h2 class="card-title">
-                {{getmoviedetails.moviedetails.name}}
                 <small primary>PG{{getmoviedetails.moviedetails.audience}}</small>
             </h2>
 
-            <ion-row *ngFor="let ms of movieselected; let i = index;" style="margin-top: 10px;">
-                <ion-col *ngIf="i > 4">
-                    <ion-icon [name]='ms.itemicon'></ion-icon>
-                    {{ms.itemdesc}}
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="time"></ion-icon>
+                    Showtime
                 </ion-col>
-                <ion-col *ngIf="i > 4">
-                    <p>{{ms.item}}</p>
+                <ion-col width-50>
+                    <span>{{getmoviedetails.showtimes}}</span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="people"></ion-icon>
+                    Genre
+                </ion-col>
+                <ion-col width-50>
+                    <span *ngFor="let gnr of getmoviedetails.moviedetails.genre; let i = index">
+                        {{gnr.genrename}}<span [hidden]="i === getmoviedetails.moviedetails.genre.length-1">,</span>
+                    </span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="chatboxes"></ion-icon>
+                    Language
+                </ion-col>
+                <ion-col width-50>
+                    <span *ngFor="let sbt of getmoviedetails.moviedetails.subtitle; let i = index">
+                        {{sbt.lang}}<span [hidden]="i === getmoviedetails.moviedetails.subtitle.length-1">,</span>
+                    </span>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="person"></ion-icon>
+                    Director
+                </ion-col>
+                <ion-col width-50>
+                    <span>{{getmoviedetails.moviedetails.directedby}}</span>
                 </ion-col>
             </ion-row>
             <br>
+            <h5>
+                Synopsis
+            </h5>
             <p>{{getmoviedetails.moviedetails.synopsis}}</p>
         </ion-card-content>
 
+<!--
         <ion-item actions class="demo-card">
             <button clear item-left pink>
                 <ion-icon name='heart'></ion-icon>
                     {{getmoviedetails.moviedetails.like}} likes
             </button>
         </ion-item>
-    </ion-card>
 -->
+    </ion-card>
+
 
 </ion-content>

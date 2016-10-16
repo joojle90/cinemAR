@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
+import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
 
-/*
-  Generated class for the MoviedetailsPage page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
-  templateUrl: 'build/pages/moviedetails/moviedetails.html',
+    templateUrl: 'build/pages/moviedetails/moviedetails.html',
 })
 export class MoviedetailsPage {
+    getmoviedetails: string[];
 
-  constructor(private navCtrl: NavController) {
-
-  }
+    constructor(
+        private navCtrl: NavController,
+        private navParams: NavParams
+    ) {
+        this.getmoviedetails = this.navParams.data;
+        console.log(this.getmoviedetails);
+    }
 
 }

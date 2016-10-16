@@ -29,10 +29,13 @@ export class NowshowingPage {
         })
     }
 
-    watchtrailer(moviedetails) {
-        var thetrailer = `https://www.youtube.com/embed/${moviedetails.trailer}`;
+    watchtrailer(movieitems, moviedetails) {
+        let thetrailer = `https://www.youtube.com/embed/${moviedetails.trailer}`;
         this.navCtrl.push(MoviedetailsPage, {
             trailerlinks: thetrailer,
+            showtimes: movieitems.showtime,
+            movienames: movieitems.moviename,
+            likes: movieitems.like,
             moviedetails: moviedetails
         });
     }

@@ -6,7 +6,7 @@
         "image_potr": "the_angry_bird.jpg",
         "image_land": "the_angry_bird.jpg",
         "showtime": "29 Jan 2016",
-        "like": 140,
+        "like": 640,
         "duration": 130,
         "discount": 0,
         "moviedetails": [{
@@ -14,11 +14,15 @@
             "trailer": "4pIi4tMJoUs",
             "audience": 13,
             "genre": [{
-                "genrename": "Cartoon"
+                "genrename": "Animation"
             }, {
                 "genrename": "Adventure"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "Clay Kaytis"
         }],
         "cinemamovie": [{
@@ -48,11 +52,15 @@
             "trailer": "CmRih_VtVAs",
             "audience": 18,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David Ayer"
         }],
         "cinemamovie": [{
@@ -82,13 +90,17 @@
             "trailer": "Aj7ty6sViiU",
             "audience": 13,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }, {
                 "genrename": "Drama"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David Yates"
         }],
         "cinemamovie": [{
@@ -118,13 +130,17 @@
             "trailer": "UPJyEHmM0",
             "audience": 13,
             "genre": [{
-                "genrename": "Action "
+                "genrename": "Action"
             }, {
                 "genrename": "Adventure"
             }, {
                 "genrename": "Thriller"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "Peter Berg"
         }],
         "cinemamovie": [{
@@ -154,11 +170,15 @@
             "trailer": "6LiKKFZyhRU",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }, {
                 "genrename": "Thriller"
             }],
-            "lang": "English",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": "David F. Sandberg"
         }],
         "cinemamovie": [{
@@ -188,9 +208,13 @@
             "trailer": "tLCIHiIYiLY",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "English"
+            }, {
+                "lang": "Malay"
+            }],
             "directedby": " Syamsul Yusof"
         }],
         "cinemamovie": [{
@@ -212,7 +236,7 @@
         "image_potr": "boBoiBoy_the_movie.jpg",
         "image_land": "boBoiBoy_the_movie.jpg",
         "showtime": "30 Apr 2016",
-        "like": 26501,
+        "like": 265,
         "duration": 160,
         "discount": 0,
         "moviedetails": [{
@@ -222,11 +246,11 @@
             "genre": [{
                 "genrename": "Animation "
             },{
-                "genrename": "Action "
-            },{
-                "genrename": "Comedy "
+                "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": " Nizam Razak"
         }],
         "cinemamovie": [{
@@ -256,11 +280,13 @@
             "trailer": "Nt50rVycjoA",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             },{
-                "genrename": "Action "
+                "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": " Faisal Ishak"
         }],
         "cinemamovie": [{
@@ -290,9 +316,11 @@
             "trailer": "52MgKOqJKKo",
             "audience": 13,
             "genre": [{
-                "genrename": "Horror "
+                "genrename": "Horror"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": "Shadan Hashim"
         }],
         "cinemamovie": [{
@@ -324,7 +352,9 @@
             "genre": [{
                 "genrename": "Action"
             }],
-            "lang": "Malay",
+            "subtitle": [{
+                "lang": "Malay"
+            }],
             "directedby": "Pekin Ibrahim"
         }],
         "cinemamovie": [{

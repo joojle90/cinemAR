@@ -9,12 +9,13 @@
 
 </ion-header>
 
+<ion-searchbar primary placeholder="Search"></ion-searchbar>
 
 <ion-content class="nowshowing">
     <ion-row *ngFor="let ml of movielist; let i = index" [hidden]="i % 3 !==0">
         <ion-col *ngIf="i % 3 === 0 && i < movielist.length" width-33>
             <ion-card>
-                <a clear (click)="watchtrailer(movielist[i].moviedetails[0])">
+                <a clear (click)="watchtrailer(movielist[i], movielist[i].moviedetails[0])">
                     <img src="img/poster_small/{{movielist[i].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -27,7 +28,7 @@
         </ion-col>
         <ion-col *ngIf="i % 3 === 0 && i+1 < movielist.length" width-33>
             <ion-card>
-                <a clear (click)="watchtrailer(movielist[i+1].moviedetails[0])">
+                <a clear (click)="watchtrailer(movielist[i+1], movielist[i+1].moviedetails[0])">
                     <img src="img/poster_small/{{movielist[i+1].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -40,7 +41,7 @@
         </ion-col>
         <ion-col *ngIf="i % 3 === 0 && i+2 < movielist.length" width-33>
             <ion-card>
-                <a clear (click)="watchtrailer(movielist[i+2].moviedetails[0])">
+                <a clear (click)="watchtrailer(movielist[i+2], movielist[i+2].moviedetails[0])">
                     <img src="img/poster_small/{{movielist[i+2].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
