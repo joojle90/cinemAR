@@ -21,10 +21,17 @@ export class NowshowingPage {
 
     loadmovielist() {
         return this.cinemardata.getMovielist().then(data => {
-            this.movielist = data.filter(moviesort => {
-                let datea = moviesort.showtime.split(" ");
+            let movieitems = data.filter(themovie => {
+                let datea = themovie.showtime.split(" ");
                 let dateb = new Date (datea[2], monthname.indexOf(datea[1].toLowerCase()), datea[0]);
-                return dateb < new Date();
+                return dateb < new Date() && themovie.status === "active";
+            });
+            this.movielist = movieitems.sort((a,b) => {
+                let datesortA = a.showtime.split(" ");
+                let datesortB = b.showtime.split(" ");
+                let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
+                let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
+                return newdateB > newdateA;
             });
         })
     }
