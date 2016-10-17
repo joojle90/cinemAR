@@ -38,11 +38,17 @@ export class TophitsPage {
         this.navCtrl.push(BookticketPage);
     }
 
-    watchtrailer(moviedetails) {
-        var thetrailer = `https://www.youtube.com/embed/${moviedetails.trailer}`;
+    watchtrailer(movieitems, moviedetails) {
+        let showa = movieitems.showtime.split(" ");
+        let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
+
         this.navCtrl.push(MoviedetailsPage, {
-            trailerlinks: thetrailer,
-            moviedetails: moviedetails
+            showtimes: movieitems.showtime,
+            movienames: movieitems.moviename,
+            likes: movieitems.like,
+            moviedetails: moviedetails,
+            discount: movieitems.discount,
+            comingshow: theshow > new Date() ? 1 : 0
         });
     }
 

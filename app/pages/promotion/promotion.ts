@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
+
+let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
+                 "sep", "oct", "nov", "dec"];
 
 @Component({
     templateUrl: 'build/pages/promotion/promotion.html',
@@ -14,7 +18,6 @@ export class PromotionPage {
         private navCtrl: NavController,
         public cinemardata: CinemarData
     ) {
-
         this.slideconf = {
             initialSlide: 0,
             autoplay: 3000,
@@ -25,18 +28,30 @@ export class PromotionPage {
 
     loadpromotionlist() {
         return this.cinemardata.getPromotionlist().then(data => {
-            this.promotionlist = data.filter(datapromo =>
+            let thepromotion = data.filter(datapromo =>
                  datapromo.discount > 0 && datapromo.status === "active");
+
+            this.promotionlist = thepromotion.sort((a,b) => {
+                return b.discount > a.discount;
+            });
         })
     }
 
+    bookticket() {
+        this.navCtrl.push(BookticketPage);
+    }
+
     watchtrailer(movieitems, moviedetails) {
+        let showa = movieitems.showtime.split(" ");
+        let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
+
         this.navCtrl.push(MoviedetailsPage, {
             showtimes: movieitems.showtime,
             movienames: movieitems.moviename,
             likes: movieitems.like,
             moviedetails: moviedetails,
-            discount: movieitems.discount
+            discount: movieitems.discount,
+            comingshow: theshow > new Date() ?  1 : 0
         });
     }
 

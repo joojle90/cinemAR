@@ -43,8 +43,8 @@ export class NowshowingPage {
         return this.cinemardata.getMovielist().then(data => {
             let movieitems = data.filter(themovie => {
                 let datea = themovie.showtime.split(" ");
-                let dateb = new Date (datea[2], monthname.indexOf(datea[1].toLowerCase()), datea[0]);
-                return dateb < new Date() && themovie.status === "active";
+                let thedate = new Date (datea[2], monthname.indexOf(datea[1].toLowerCase()), datea[0]);
+                return thedate < new Date() && themovie.status === "active";
             });
             this.movielist = movieitems.sort((a,b) => {
                 let datesortA = a.showtime.split(" ");
@@ -57,12 +57,16 @@ export class NowshowingPage {
     }
 
     watchtrailer(movieitems, moviedetails) {
+        let showa = movieitems.showtime.split(" ");
+        let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
+
         this.navCtrl.push(MoviedetailsPage, {
             showtimes: movieitems.showtime,
             movienames: movieitems.moviename,
             likes: movieitems.like,
             moviedetails: moviedetails,
-            discount: movieitems.discount
+            discount: movieitems.discount,
+            comingshow: theshow > new Date() ?  1 : 0
         });
     }
 

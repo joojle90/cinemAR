@@ -10,7 +10,7 @@
 
 <ion-content class="tophits">
     <ion-card *ngFor="let thl of tophitslist; let i = index">
-        <a clear (click)="watchtrailer(thl.moviedetails[0])">
+        <a clear (click)="watchtrailer(tophitslist[i], thl.moviedetails[0])">
             <img src="img/poster_land/{{thl.image_land}}" />
         </a>
         <div class="card-title">{{thl.moviename}}</div>

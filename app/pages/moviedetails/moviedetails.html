@@ -18,7 +18,7 @@
         </div>
         <span class="tags">
             <span class="price-tag">
-                <p [hidden]="getmoviedetails.discount === 0">{{getmoviedetails.discount}}%</p>
+                <p [hidden]="getmoviedetails.discount === 0">OFF {{getmoviedetails.discount}}%</p>
             </span>
         </span>
         <ion-card-content>
@@ -83,3 +83,6 @@
 
 
 </ion-content>
+<button fab btncart fab-bottom fab-right (click)="bookticket()" style="z-index: 100" [hidden]="getmoviedetails.comingshow === 1">
+    <ion-icon name='cart' is-active="true"></ion-icon>
+</button>
