@@ -32,9 +32,7 @@ export class CategorymoviesPage {
 
                 for (let j in data[i].moviedetails) {
                     mymovies.push({
-                        showtimes: data[i].showtime,
-                        movienames: data[i].moviename,
-                        likes: data[i].like,
+                        movieitems: data[i],
                         moviedetails: data[i].moviedetails,
                         discount: data[i].discount,
                         comingshow: theshow > new Date() ?  1 : 0,
@@ -42,16 +40,15 @@ export class CategorymoviesPage {
                     });
                 }
             }
-            this.moviesbycategories = mymovies.filter(datamovies => {
-//                let s = [];
-//                for (let i in datamovies.genrename) {
-//                    s = datamovies.genrename[i];
-//                    console.log(datamovies.genrename[i]);
-////                    return datamovies.genrename[i] === thegenre ? datamovies : "No data";
-//                }
-                return datamovies;
+            this.moviesbycategories = mymovies.filter((datamovies, j) => {
+                let b: any = [];
+                for (let i in datamovies.genrename) {
+                    if(datamovies.genrename[i].genrename === thegenre) {
+                        console.log(mymovies[j]);
+                        return this.moviesbycategories = mymovies[j];
+                    }
+                }
             });
-                    console.log(this.moviesbycategories);
         })
     }
 
