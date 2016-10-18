@@ -3,41 +3,49 @@
         "genreid": "CNGR001",
         "genrename": "Adventure",
         "description": "Adventure description",
-        "image": "adventure.jpg"
+        "image": "adventure.jpg",
+        "total": 7
     },{
         "genreid": "CNGR002",
         "genrename": "Sci-fi",
         "description": "Sci-fi description",
-        "image": "sci-fi.jpg"
+        "image": "sci-fi.jpg",
+        "total": 9
     },{
         "genreid": "CNGR003",
         "genrename": "Horror",
         "description": "Horror description",
-        "image": "horror.jpg"
+        "image": "horror.jpg",
+        "total": 8
     },{
         "genreid": "CNGR004",
         "genrename": "Action",
         "description": "Action description",
-        "image": "action.jpg"
+        "image": "action.jpg",
+        "total": 6
     },{
         "genreid": "CNGR005",
         "genrename": "Thriller",
         "description": "Thriller description",
-        "image": "thriller.jpg"
+        "image": "thriller.jpg",
+        "total": 8
     },{
         "genreid": "CNGR006",
         "genrename": "Romance",
         "description": "Romance description",
-        "image": "romance.jpg"
+        "image": "romance.jpg",
+        "total": 8
     },{
         "genreid": "CNGR007",
         "genrename": "Fantasy",
         "description": "Fantasy description",
-        "image": "fantasy.jpg"
+        "image": "fantasy.jpg",
+        "total": 7
     },{
         "genreid": "CNGR008",
         "genrename": "Animation",
         "description": "Cartoon description",
-        "image": "animation.jpg"
+        "image": "animation.jpg",
+        "total": 8
     }]
 }

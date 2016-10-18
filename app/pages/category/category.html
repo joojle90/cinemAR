@@ -13,7 +13,7 @@
     <ion-card class="card-style" *ngFor="let grl of categorylist; let i = index">
         <img src="img/category/{{grl.image}}" />
         <p class="card-style-title">{{grl.genrename}}</p>
-        <p class="card-style-subtitle"> Movies Available</p>
-        <button class="card-style-details" (click)="moviebygenre(grl.genre)">More details</button>
+        <p class="card-style-subtitle"><span>{{grl.total}}</span> Movies Available</p>
+        <button class="card-style-details" (click)="moviebygenre(grl.genrename)">More details</button>
     </ion-card>
 </ion-content>

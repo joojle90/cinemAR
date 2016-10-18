@@ -70,5 +70,11 @@ export class CinemarData {
         });
     }
 
+    getMoviebyCategory() {
+        return this.load('movielist.json').then(data => {
+            return data.movielist;
+        });
+    }
+
 }
 

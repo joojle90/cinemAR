@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
 
 let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
                  "sep", "oct", "nov", "dec"];
@@ -54,6 +55,10 @@ export class NowshowingPage {
                 return newdateB > newdateA;
             });
         })
+    }
+
+    bookticket() {
+        this.navCtrl.push(BookticketPage);
     }
 
     watchtrailer(movieitems, moviedetails) {

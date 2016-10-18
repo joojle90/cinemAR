@@ -6,6 +6,10 @@
         width: 100%;
         font-weight: bold;
         color: #FFF23D !important;
+
+        span {
+            color: #fff;
+        }
     }
     .card-style {
         position: relative;
@@ -23,7 +27,7 @@
         font-size: 2.5em;
         width: 100%;
         font-weight: bold;
-        color: white !important;
+        color: #4fff33 !important;
     }
     ion-card button.card-style-details {
         position: absolute;

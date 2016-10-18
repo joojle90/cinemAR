@@ -24,4 +24,8 @@ export class MoviedetailsPage {
         console.log(this.navParams.data.moviedetails.trailer);
     }
 
+    bookticket() {
+        this.navCtrl.push(BookticketPage);
+    }
+
 }

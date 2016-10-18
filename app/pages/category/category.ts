@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { CategorymoviesPage } from '../../pages/categorymovies/categorymovies';
 
 @Component({
     templateUrl: 'build/pages/category/category.html',
@@ -21,6 +22,12 @@ export class CategoryPage {
                 return a.genrename.localeCompare(b.genrename)
             })
         })
+    }
+
+    moviebygenre(genrename) {
+        this.navCtrl.push(CategorymoviesPage, {
+            genrename: genrename
+        });
     }
 
 }
