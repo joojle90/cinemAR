@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
 
 let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
                  "sep", "oct", "nov", "dec"];
@@ -27,29 +29,43 @@ export class CategorymoviesPage {
             let mymovies: any = [];
 
             for (let i in data) {
-                let showa = data[i].showtime.split(" ");
-                let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
-
                 for (let j in data[i].moviedetails) {
                     mymovies.push({
                         movieitems: data[i],
                         moviedetails: data[i].moviedetails,
-                        discount: data[i].discount,
-                        comingshow: theshow > new Date() ?  1 : 0,
-                        genrename: data[i].moviedetails[j].genre
+                        genrename: data[i].moviedetails[j].genre,
+                        moviestatus: data[i].status
                     });
                 }
             }
             this.moviesbycategories = mymovies.filter((datamovies, j) => {
-                let b: any = [];
                 for (let i in datamovies.genrename) {
-                    if(datamovies.genrename[i].genrename === thegenre) {
+                    if(datamovies.genrename[i].genrename === thegenre && mymovies[j].moviestatus === "active") {
                         console.log(mymovies[j]);
                         return this.moviesbycategories = mymovies[j];
                     }
                 }
             });
         })
+    }
+
+    bookticket() {
+        this.navCtrl.push(BookticketPage);
+    }
+
+    watchtrailer(movieitems, moviedetails) {
+        console.log(movieitems);
+        let showa = movieitems.showtime.split(" ");
+        let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
+
+        this.navCtrl.push(MoviedetailsPage, {
+            showtimes: movieitems.showtime,
+            movienames: movieitems.moviename,
+            likes: movieitems.like,
+            moviedetails: moviedetails,
+            discount: movieitems.discount,
+            comingshow: theshow > new Date() ?  1 : 0
+        });
     }
 
 }
