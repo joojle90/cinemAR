@@ -83,6 +83,6 @@
 
 
 </ion-content>
-<button fab btncart fab-bottom fab-right (click)="bookticket()" style="z-index: 100" [hidden]="getmoviedetails.comingshow === 1">
+<button fab btncart fab-bottom fab-right (click)="bookticket(getmoviedetails)" style="z-index: 100" [hidden]="getmoviedetails.comingshow === 1">
     <ion-icon name='cart' is-active="true"></ion-icon>
 </button>

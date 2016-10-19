@@ -66,6 +66,8 @@ export class NowshowingPage {
         let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
 
         this.navCtrl.push(MoviedetailsPage, {
+            movieid: movieitems.movieid,
+            image: movieitems.image_land,
             showtimes: movieitems.showtime,
             movienames: movieitems.moviename,
             likes: movieitems.like,

@@ -24,8 +24,14 @@ export class MoviedetailsPage {
         console.log(this.navParams.data.moviedetails.trailer);
     }
 
-    bookticket() {
-        this.navCtrl.push(BookticketPage);
+    bookticket(getmovieitems) {
+        console.log(getmovieitems);
+        this.navCtrl.push(BookticketPage, {
+            movieid: getmovieitems.movieid,
+            movieimage: getmovieitems.image,
+            movienames: getmovieitems.movienames,
+            moviediscount: getmovieitems.discount
+        });
     }
 
 }
