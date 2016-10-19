@@ -27,22 +27,35 @@ export class CategorymoviesPage {
     loadcategoryMovieslist(thegenre: string) {
         return this.cinemardata.getMoviebyCategory().then(data => {
             let mymovies: any = [];
+            let movielist = data.sort((a,b) => {
+                let datesortA = a.showtime.split(" ");
+                let datesortB = b.showtime.split(" ");
+                let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
+                let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
+                return newdateB > newdateA;
+            });
 
-            for (let i in data) {
+            for (let i in movielist) {
+                let showdate = data[i].showtime.split(" ");
+                let theshowdate = new Date (showdate[2], monthname.indexOf(showdate[1].toLowerCase()), showdate[0]);
+
                 for (let j in data[i].moviedetails) {
                     mymovies.push({
                         movieitems: data[i],
                         moviedetails: data[i].moviedetails,
                         genrename: data[i].moviedetails[j].genre,
-                        moviestatus: data[i].status
+                        moviestatus: data[i].status,
+                        comingshow: theshowdate > new Date() ?  1 : 0
                     });
                 }
             }
+
             this.moviesbycategories = mymovies.filter((datamovies, j) => {
                 for (let i in datamovies.genrename) {
                     if(datamovies.genrename[i].genrename === thegenre && mymovies[j].moviestatus === "active") {
                         console.log(mymovies[j]);
-                        return this.moviesbycategories = mymovies[j];
+                        this.moviesbycategories = mymovies[j]
+                        return this.moviesbycategories;
                     }
                 }
             });

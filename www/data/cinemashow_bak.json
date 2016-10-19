@@ -7,13 +7,24 @@
         "hall": 7,
         "lat": 43.071584,
         "lng": -89.380120,
-        "cinemadetails": [{
+        "movieshow": [{
             "movieid": "CNMV001",
             "moviename": "The Angry Bird",
             "image_small": "img/angrybird.jpg",
             "duration": 120,
             "scheduleid": "CNSC001"
-        }],
-        "status": "active"
+        }, {
+            "movieid": "CNMV002",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "duration": 140,
+            "scheduleid": "CNSC001"
+        }, {
+            "movieid": "CNMV003",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "duration": 135,
+            "scheduleid": "CNSC001"
+        }]
     }]
 }
