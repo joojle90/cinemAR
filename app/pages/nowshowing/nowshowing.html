@@ -20,7 +20,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{movielist[i].duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()">
+                    <button primary clear item-right (click)="bookticket(movielist[i])">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>
@@ -33,7 +33,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{movielist[i+1].duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()">
+                    <button primary clear item-right (click)="bookticket(movielist[i+1])">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>
@@ -46,7 +46,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{movielist[i+2].duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()">
+                    <button primary clear item-right (click)="bookticket(movielist[i+2])">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>

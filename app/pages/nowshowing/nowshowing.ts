@@ -57,8 +57,14 @@ export class NowshowingPage {
         })
     }
 
-    bookticket() {
-        this.navCtrl.push(BookticketPage);
+    bookticket(getmovieitems) {
+        console.log(getmovieitems);
+        this.navCtrl.push(BookticketPage, {
+            movieid: getmovieitems.movieid,
+            movieimage: getmovieitems.image_land,
+            movienames: getmovieitems.moviename,
+            moviediscount: getmovieitems.discount
+        });
     }
 
     watchtrailer(movieitems, moviedetails) {

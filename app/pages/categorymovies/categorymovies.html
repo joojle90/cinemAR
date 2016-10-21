@@ -21,7 +21,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{moviesbycategories[i].movieitems.duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()" [attr.disabled]="moviesbycategories[i].comingshow == 1 ? 'disabled' : null">
+                    <button primary clear item-right (click)="bookticket(moviesbycategories[i].movieitems)" [attr.disabled]="moviesbycategories[i].comingshow == 1 ? 'disabled' : null">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>
@@ -39,7 +39,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{moviesbycategories[i+1].movieitems.duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()" [attr.disabled]="moviesbycategories[i+1].comingshow == 1 ? 'disabled' : null">
+                    <button primary clear item-right (click)="bookticket(moviesbycategories[i+1].movieitems)" [attr.disabled]="moviesbycategories[i+1].comingshow == 1 ? 'disabled' : null">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>
@@ -57,7 +57,7 @@
                 </a>
                 <ion-item actions>
                     <p danger>{{moviesbycategories[i+2].movieitems.duration}} min</p>
-                    <button primary clear item-right (click)="bookticket()" [attr.disabled]="moviesbycategories[i+2].comingshow == 1 ? 'disabled' : null">
+                    <button primary clear item-right (click)="bookticket(moviesbycategories[i+2].movieitems)" [attr.disabled]="moviesbycategories[i+2].comingshow == 1 ? 'disabled' : null">
                         <ion-icon name="cart"></ion-icon>
                     </button>
                 </ion-item>
