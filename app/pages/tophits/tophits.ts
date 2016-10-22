@@ -21,7 +21,7 @@ export class TophitsPage {
     }
 
     loadtophitslist() {
-        return this.cinemardata.getTophitslist().then(data => {
+        return this.cinemardata.getMovielist().then(data => {
             let thetophits = data.filter(themovie => {
                 let datea = themovie.showtime.split(" ");
                 let dateb = new Date (datea[2], monthname.indexOf(datea[1].toLowerCase()), datea[0]);

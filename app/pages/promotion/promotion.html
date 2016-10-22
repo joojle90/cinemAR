@@ -5,12 +5,6 @@
         <button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-
-        <ion-buttons end>
-            <button (click)="bookticket(promoid)">
-                <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
-            </button>
-        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
@@ -20,8 +14,12 @@
             <p class="promotion-disc">{{pml.discount}}% Off</p>
             <img src="img/poster_potr/{{pml.image_potr}}" class="slide-image" />
 
-            <button fab darklight fab-bottom fab-right (click)="watchtrailer(promotionlist[i], pml.moviedetails[0])" style="z-index:100">
+            <button fab darklight fab-bottom fab-left (click)="watchtrailer(promotionlist[i], pml.moviedetails[0])" style="z-index:100">
                 <ion-icon name='play' is-active="false"></ion-icon>
+            </button>
+
+            <button fab danger fab-bottom fab-right (click)="bookticket(promotionlist[i])" style="z-index:100">
+                <ion-icon name='cart' is-active="false"></ion-icon>
             </button>
         </ion-slide>
     </ion-slides>

@@ -31,20 +31,33 @@ export class PromotionPage {
             let thepromotion = data.filter(datapromo =>
                  datapromo.discount > 0 && datapromo.status === "active");
 
-            this.promotionlist = thepromotion.sort((a,b) => {
+            let mymovies: any = [];
+            let i = 0;
+            for(let s in thepromotion) {
+                mymovies.push({
+                    id: i,
+                    movieid: thepromotion[s].movieid,
+                    moviename: thepromotion[s].moviename,
+                    image_potr: thepromotion[s].image_potr,
+                    image_land: thepromotion[s].image_land,
+                    like: thepromotion[s].like,
+                    discount: thepromotion[s].discount,
+                    showtime: thepromotion[s].showtime,
+                    moviedetails: thepromotion[s].moviedetails
+
+                });
+                i++;
+            }
+
+            this.promotionlist = mymovies.sort((a,b) => {
                 return b.discount > a.discount;
             });
         })
     }
 
-    bookticket(getmovieitems) {
-        console.log(getmovieitems);
-        this.navCtrl.push(BookticketPage, {
-            movieid: getmovieitems.movieid,
-            movieimage: getmovieitems.image_land,
-            movienames: getmovieitems.moviename,
-            moviediscount: getmovieitems.discount
-        });
+    bookticket(getdetails) {
+            console.log(getdetails);
+        this.navCtrl.push(BookticketPage);
     }
 
     watchtrailer(movieitems, moviedetails) {

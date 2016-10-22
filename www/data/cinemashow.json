@@ -2,17 +2,61 @@
     "cinemashow": [{
         "cinemaid": "CNSH001",
         "cinemaname": "Great Mall Putra",
-        "image_land": "img/cinemashow/cinema1.jpg",
+        "image_land": "great_mall_putra.jpg",
         "address": "Presint 15, 34000 Putrajaya",
-        "hall": 7,
         "lat": 43.071584,
         "lng": -89.380120,
         "cinemadetails": [{
-            "movieid": "CNMV001",
-            "moviename": "The Angry Bird",
-            "image_small": "img/angrybird.jpg",
-            "duration": 120,
-            "scheduleid": "CNSC001"
+            "hall": 6,
+            "totalmovies": 21
+        }],
+        "status": "active"
+    },{
+        "cinemaid": "CNSH002",
+        "cinemaname": "Kuala Lumpur Mall",
+        "image_land": "kuala_lumpur_mall.jpg",
+        "address": "Block B, Jalan Tun Razak, Kuala Lumpur",
+        "lat": 43.071584,
+        "lng": -89.380120,
+        "cinemadetails": [{
+            "hall": 8,
+            "totalmovies": 30
+        }],
+        "status": "active"
+    },{
+        "cinemaid": "CNSH003",
+        "cinemaname": "Bangi Giant",
+        "image_land": "bangi_giant.jpg",
+        "address": "Seksyen 8, Bandar Baru Bangi",
+        "lat": 43.071584,
+        "lng": -89.380120,
+        "cinemadetails": [{
+            "hall": 5,
+            "totalmovies": 19
+        }],
+        "status": "active"
+    },{
+        "cinemaid": "CNSH004",
+        "cinemaname": "Kajang International Trade Center",
+        "image_land": "kajang_international_trade_center.jpg",
+        "address": "Jalan Reko 2, Metropoint",
+        "lat": 43.071584,
+        "lng": -89.380120,
+        "cinemadetails": [{
+            "hall": 7,
+            "totalmovies": 25
+        }],
+        "status": "active"
+    },{
+        "cinemaid": "CNSH005",
+        "cinemaname": "Serdang Square",
+        "image_land": "serdang_square.jpg",
+        "address": "Block C, Jalan Serdang Bandar, Serdang",
+        "lat": 43.071584,
+        "lng": -89.380120,
+        "cinemadetails": [{
+            "hall": 4,
+            "totalmovies": 16
         }],
         "status": "active"
     }]

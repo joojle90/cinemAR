@@ -76,5 +76,11 @@ export class CinemarData {
         });
     }
 
+    getCinemaList() {
+        return this.load('cinemashow.json').then(data => {
+            return data.cinemashow;
+        });
+    }
+
 }
 
