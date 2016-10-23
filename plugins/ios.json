@@ -24,6 +24,12 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "io.ionic.starter"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.cinemar539920"
+        },
+        "com.wikitude.phonegap.WikitudePlugin": {
+            "PACKAGE_NAME": "com.ionicframework.cinemar539920"
         }
     },
     "dependent_plugins": {}

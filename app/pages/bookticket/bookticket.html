@@ -14,6 +14,18 @@
           <img src="img/poster_land/{{getbookingdetails.movieimage}}">
         </div>
         <ion-item>
+            <ion-label>Movie Name</ion-label>
+            <ion-select [(ngModel)]="moviename">
+                <ion-option value="CM001">The Angry Bird</ion-option>
+                <ion-option value="CM002">Ice Age 3</ion-option>
+                <ion-option value="CM003">Madagascar 3</ion-option>
+                <ion-option value="CM004">Penguins</ion-option>
+                <ion-option value="CM005">Ola Bola</ion-option>
+                <ion-option value="CM006">The Boy</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
             <ion-label>Choose Regions</ion-label>
             <ion-select [(ngModel)]="regions">
                 <ion-option value="bsr">Bangsar</ion-option>
@@ -33,18 +45,6 @@
                 <ion-option value="cmm03">CinemAR MALL 3</ion-option>
                 <ion-option value="cmm04">CinemAR MALL 4</ion-option>
                 <ion-option value="cmm05">CinemAR MALL 5</ion-option>
-            </ion-select>
-        </ion-item>
-
-        <ion-item>
-            <ion-label>Movie Name</ion-label>
-            <ion-select [(ngModel)]="moviename">
-                <ion-option value="CM001">The Angry Bird</ion-option>
-                <ion-option value="CM002">Ice Age 3</ion-option>
-                <ion-option value="CM003">Madagascar 3</ion-option>
-                <ion-option value="CM004">Penguins</ion-option>
-                <ion-option value="CM005">Ola Bola</ion-option>
-                <ion-option value="CM006">The Boy</ion-option>
             </ion-select>
         </ion-item>
 

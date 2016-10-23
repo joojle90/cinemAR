@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
+import { SocialSharing } from 'ionic-native';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
 import { BookticketPage } from '../../pages/bookticket/bookticket';
@@ -7,11 +8,14 @@ import { BookticketPage } from '../../pages/bookticket/bookticket';
 let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
                  "sep", "oct", "nov", "dec"];
 
+declare var cordova;
+
 @Component({
     templateUrl: 'build/pages/nowshowing/nowshowing.html',
 })
 export class NowshowingPage {
     movielist: string[];
+    app: any;
 
     constructor(
         private navCtrl: NavController,
@@ -99,5 +103,93 @@ export class NowshowingPage {
                 loader.dismiss();
             });
 //        }, 3000);
+    }
+
+    getARapps() {
+        var app = {
+            arExperienceUrl: "www/world/2_CloudRecognition_2_ContinuousRecognitionVsOn-Click/index.html",
+            requiredFeatures: ["2d_tracking"],
+            isDeviceSupported: false,
+            startupConfiguration: {
+                "camera_position": "back"
+            },
+
+            initialize: function () {
+                this.bindEvents();
+            },
+
+            bindEvents: function () {
+                document.addEventListener('deviceready', this.onDeviceReady, false);
+            },
+
+            onDeviceReady: function () {
+                (<any>app).wikitudePlugin = cordova.require("com.wikitude.phonegap.WikitudePlugin.WikitudePlugin");
+                (<any>app).wikitudePlugin.isDeviceSupported(
+                    app.onDeviceSupported,
+                    app.onDeviceNotSupported,
+                    app.requiredFeatures
+                );
+            },
+
+            onDeviceSupported: function () {
+                (<any>app).wikitudePlugin.setOnUrlInvokeCallback(app.onURLInvoked);
+
+                (<any>app).wikitudePlugin.loadARchitectWorld(
+                    app.onARExperienceLoadedSuccessful,
+                    app.onARExperienceLoadError,
+                    app.arExperienceUrl,
+                    app.requiredFeatures,
+                    app.startupConfiguration
+                );
+            },
+
+            onDeviceNotSupported: function (errorMessage) {
+                alert(errorMessage);
+            },
+
+            onARExperienceLoadedSuccessful: function (loadedURL) {
+
+            },
+
+            onARExperienceLoadError: function (errorMessage) {
+                alert('Loading AR web view failed: ' + errorMessage);
+            },
+
+            onURLInvoked: function(url) {
+                var splittedURL = url.split('?');
+                var action = splittedURL[0];
+                var message =  String(splittedURL[1]);
+                var image =  String(splittedURL[2]);
+                var link = String( splittedURL[3]);
+
+                //cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
+                if ( action.indexOf('shareInFacebook') > -1) {
+                    SocialSharing
+                    //Share via native share sheet
+                    .shareViaFacebook(message,  image, link)
+                    .then(function(result) {
+                        //Success!
+                    }, function(err) {
+                        //An error occured. Show a message to the user
+                        alert("Download and log in to your Facebook App");
+                    });
+                } else if ( action.indexOf('shareInTwitter') > -1) {
+                    SocialSharing
+                    //Share via native share sheet
+                    .shareViaTwitter(message,  image, link)
+                    .then(function(result) {
+                        //Success!
+                    }, function(err) {
+                        //An error occured. Show a message to the user
+                        alert("Download and log in to your Twitter  App" );
+                    });
+                }
+//                else if ( action.indexOf('goToBuyTicket') > -1)
+//                else if ( action.indexOf('goToTopHits') > -1)
+//                else if ( action.indexOf('goToMovieInformation') > -1)
+            }
+
+        }
+        app.initialize();
     }
 }
