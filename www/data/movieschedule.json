@@ -1,40 +1,41 @@
 {
-    "movielist": [{
+    "movieschedule": [{
+        "scheduleid": "CNSD001",
         "movieid": "CNMV001",
-        "moviename": "The Angry Bird",
-        "image_small": "the_angry_bird.jpg",
-        "image_potr": "the_angry_bird.jpg",
-        "image_land": "the_angry_bird.jpg",
-        "showtime": "29 Jan 2016",
-        "endshow": "31 Feb 2016",
-        "like": 640,
-        "duration": 130,
-        "discount": 20,
-        "moviedetails": [{
-            "synopsis": "The movie takes place on Bird Island, an untouched paradise habited by birds who are naive and innocent, who know nothing of the outside world. They treasure eggs, and are all carefree and easygoing, except for few. Red, the lead  of the film, had lost his temper quite a few times and had gone to court and had been sentenced to anger management courses, led by Matilda. who has also had anger issues  before but turns it all into a hippie and zen-like lifestyle. Another angry bird is Chuck, who moves fast and talks fast. Bomb, another main character, frequently blows  up due to his disorder IED, Intermittent Explosions Disorder. Bomb lives in a bomb shelter. The birds are visited by pigs, who are dumb but funny. The birds and pigs befriend each other and have a party, but Red does not trust the pigs at all.",
-            "trailer": "4pIi4tMJoUs",
-            "audience": 13,
-            "genre": [{
-                "genrename": "Animation"
-            }, {
-                "genrename": "Adventure"
-            }],
-            "subtitle": [{
-                "lang": "English"
-            }, {
-                "lang": "Malay"
-            }],
-            "directedby": "Clay Kaytis"
-        }],
-        "cinemamovie": [{
-            "cinemaid": "CNSH001",
-            "cinemaname": "Great Mall Putra"
+        "cinemaid": "CNSH001",
+        "scheduledetails": [{
+            "scheduledate": "29 Jan 2016",
+            "scheduledetail": [{
+                "time": "10.00",
+                "showseats": "CNSD001_29Jan2016_1000"
+            },{
+                "time": "13.40",
+                "showseats": "CNSD001_29Jan2016_1340"
+            },{
+                "time": "18.30",
+                "showseats": "CNSD001_29Jan2016_1830"
+            },{
+                "time": "21.55",
+                "showseats": "CNSD001_29Jan2016_2155"
+            }]
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall KL"
+            "scheduledate": "30 Jan 2016",
+            "scheduledetail": [{
+                "time": "20.15",
+                "showseats": "CNSD001_30Jan2016_2015"
+            },{
+                "time": "23.10",
+                "showseats": "CNSD001_30Jan2016_2310"
+            }]
         },{
-            "cinemaid": "CNSH002",
-            "cinemaname": "Great Mall Selangor"
+            "scheduledate": "31 Jan 2016",
+            "scheduledetail": [{
+                "time": "20.15",
+                "showseats": "CNSD001_31Jan2016_1130"
+            },{
+                "time": "23.10",
+                "showseats": "CNSD001_31Jan2016_1920"
+            }]
         }],
         "status": "active"
     },
@@ -45,7 +46,7 @@
         "image_potr": "suicide_squad.jpg",
         "image_land": "suicide_squad.jpg",
         "showtime": "05 Aug 2016",
-        "endshow": "06 Aug 2016",
+        "endshow": "11 Aug 2016",
         "like": 186,
         "duration": 123,
         "discount": 0,
@@ -84,7 +85,7 @@
         "image_potr": "the_legend_of_tarzan.jpg",
         "image_land": "the_legend_of_tarzan.jpg",
         "showtime": "01 Jul 2016",
-        "endshow": "03 Jul 2016",
+        "endshow": "08 Jul 2016",
         "like": 260,
         "duration": 170,
         "discount": 15,
@@ -125,7 +126,7 @@
         "image_potr": "deepwater_horizon.jpg",
         "image_land": "deepwater_horizon.jpg",
         "showtime": "30 Sep 2016",
-        "endshow": "02 Oct 2016",
+        "endshow": "10 Oct 2016",
         "like": 560,
         "duration": 167,
         "discount": 0,
@@ -166,7 +167,7 @@
         "image_potr": "lights_out.jpg",
         "image_land": "lights_out.jpg",
         "showtime": "22 Nov 2016",
-        "endshow": "23 Nov 2016",
+        "endshow": "30 Nov 2016",
         "like": 660,
         "duration": 141,
         "discount": 0,
@@ -205,7 +206,6 @@
         "image_potr": "munafik.jpg",
         "image_land": "munafik.jpg",
         "showtime": "22 Oct 2016",
-        "showtime": "23 Oct 2016",
         "like": 600,
         "duration": 158,
         "discount": 0,
@@ -242,7 +242,7 @@
         "image_potr": "boBoiBoy_the_movie.jpg",
         "image_land": "boBoiBoy_the_movie.jpg",
         "showtime": "30 Apr 2016",
-        "endshow": "02 May 2016",
+        "endshow": "08 May 2016",
         "like": 265,
         "duration": 160,
         "discount": 20,
@@ -279,7 +279,7 @@
         "image_potr": "alif_dalam_7_dimensi.jpg",
         "image_land": "alif_dalam_7_dimensi.jpg",
         "showtime": "08 Nov 2016",
-        "endshow": "10 Nov 2016",
+        "endshow": "18 Nov 2016",
         "like": 545,
         "duration": 160,
         "discount": 0,
@@ -316,7 +316,7 @@
         "image_potr": "volkswagen_kuning.jpg",
         "image_land": "volkswagen_kuning.jpg",
         "showtime": "22 Sep 2016",
-        "endshow": "23 Sep 2016",
+        "endshow": "27 Sep 2016",
         "like": 555,
         "duration": 138,
         "discount": 0,
@@ -351,7 +351,7 @@
         "image_potr": "mat_moto.jpg",
         "image_land": "mat_moto.jpg",
         "showtime": "14 Jan 2016",
-        "endshow": "16 Jan 2016",
+        "endshow": "18 Jan 2016",
         "like": 453,
         "duration": 150,
         "discount": 10,

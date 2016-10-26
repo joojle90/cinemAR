@@ -1,2 +1,13 @@
 .bookticket {
+    .item {
+        background-color: inherit;
+    }
+    .item-select ion-label {
+        color: #fff133;
+    }
+    .input-wrapper {
+        .select-text {
+            color: #fff;
+        }
+    }
 }

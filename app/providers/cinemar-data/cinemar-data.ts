@@ -82,5 +82,20 @@ export class CinemarData {
         });
     }
 
+    getSelectionMovieDD() {
+        return this.load('movielist.json').then(data => {
+            let movieselection: any = [];
+
+            for (let c in data.movielist) {
+                let s = data.movielist[c];
+                movieselection.push({
+                        movieid: s.movieid,
+                        moviename: s.moviename
+                })
+            }
+            return movieselection;
+        });
+    }
+
 }
 
