@@ -27,7 +27,7 @@ export class PromotionPage {
     }
 
     loadpromotionlist() {
-        return this.cinemardata.getPromotionlist().then(data => {
+        return this.cinemardata.getMovielist().then(data => {
             let thepromotion = data.filter(datapromo =>
                  datapromo.discount > 0 && datapromo.status === "active");
 

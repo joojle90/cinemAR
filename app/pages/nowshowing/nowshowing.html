@@ -16,6 +16,11 @@
         <ion-col *ngIf="i % 3 === 0 && i < movielist.length" width-33>
             <ion-card>
                 <a clear (click)="watchtrailer(movielist[i], movielist[i].moviedetails[0])">
+                    <div class="wrapper" [hidden]="movielist[i].discount == 0">
+                        <div class="ribbon-wrapper-yellow">
+                            <div class="ribbon-yellow">Off {{movielist[i].discount}}%</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{movielist[i].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -29,6 +34,11 @@
         <ion-col *ngIf="i % 3 === 0 && i+1 < movielist.length" width-33>
             <ion-card>
                 <a clear (click)="watchtrailer(movielist[i+1], movielist[i+1].moviedetails[0])">
+                    <div class="wrapper" [hidden]="movielist[i+1].discount == 0">
+                        <div class="ribbon-wrapper-yellow">
+                            <div class="ribbon-yellow">Off {{movielist[i+1].discount}}%</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{movielist[i+1].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -42,6 +52,11 @@
         <ion-col *ngIf="i % 3 === 0 && i+2 < movielist.length" width-33>
             <ion-card>
                 <a clear (click)="watchtrailer(movielist[i+2], movielist[i+2].moviedetails[0])">
+                    <div class="wrapper" [hidden]="movielist[i+2].discount == 0">
+                        <div class="ribbon-wrapper-yellow">
+                            <div class="ribbon-yellow">Off {{movielist[i+2].discount}}%</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{movielist[i+2].image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>

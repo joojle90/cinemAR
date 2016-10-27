@@ -11,12 +11,12 @@
     <ion-row *ngFor="let mbc of moviesbycategories; let i = index" [hidden]="i % 3 !==0">
         <ion-col *ngIf="i % 3 === 0 && i < moviesbycategories.length" width-33>
             <ion-card>
-                <div class="wrapper" [hidden]="moviesbycategories[i].comingshow == 0">
-                    <div class="ribbon-wrapper-green">
-                        <div class="ribbon-green">Coming Soon</div>
-                    </div>
-                </div>
                 <a clear (click)="watchtrailer(moviesbycategories[i].movieitems, moviesbycategories[i].moviedetails[0])">
+                    <div class="wrapper" [hidden]="moviesbycategories[i].comingshow == 0">
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Coming Soon</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{moviesbycategories[i].movieitems.image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -29,12 +29,12 @@
         </ion-col>
         <ion-col *ngIf="i % 3 === 0 && i+1 < moviesbycategories.length" width-33>
             <ion-card>
-                <div class="wrapper" [hidden]="moviesbycategories[i+1].comingshow == 0">
-                    <div class="ribbon-wrapper-green">
-                        <div class="ribbon-green">Coming Soon</div>
-                    </div>
-                </div>
                 <a clear (click)="watchtrailer(moviesbycategories[i+1].movieitems, moviesbycategories[i+1].moviedetails[0])">
+                    <div class="wrapper" [hidden]="moviesbycategories[i+1].comingshow == 0">
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Coming Soon</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{moviesbycategories[i+1].movieitems.image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>
@@ -47,12 +47,12 @@
         </ion-col>
         <ion-col *ngIf="i % 3 === 0 && i+2 < moviesbycategories.length" width-33>
             <ion-card>
-                <div class="wrapper" [hidden]="moviesbycategories[i+2].comingshow == 0">
-                    <div class="ribbon-wrapper-green">
-                        <div class="ribbon-green">Coming Soon</div>
-                    </div>
-                </div>
                 <a clear (click)="watchtrailer(moviesbycategories[i+2].movieitems, moviesbycategories[i+2].moviedetails[0])">
+                    <div class="wrapper" [hidden]="moviesbycategories[i+2].comingshow == 0">
+                        <div class="ribbon-wrapper-green">
+                            <div class="ribbon-green">Coming Soon</div>
+                        </div>
+                    </div>
                     <img src="img/poster_small/{{moviesbycategories[i+2].movieitems.image_small}}" onError="this.src='img/misc/default.png'" />
                 </a>
                 <ion-item actions>

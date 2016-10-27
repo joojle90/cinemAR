@@ -58,6 +58,8 @@ export class NowshowingPage {
                 let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
                 return newdateB > newdateA;
             });
+
+            console.log(this.movielist);
         })
     }
 

@@ -8,7 +8,10 @@
         "lng": -89.380120,
         "cinemadetails": [{
             "hall": 6,
-            "totalmovies": 21
+            "totalmovies": 21,
+            "image_1": "great_mall_putra_1.jpg",
+            "image_2": "great_mall_putra_2.jpg",
+            "image_3": "great_mall_putra_3.jpg"
         }],
         "status": "active"
     },{
@@ -20,7 +23,10 @@
         "lng": -89.380120,
         "cinemadetails": [{
             "hall": 8,
-            "totalmovies": 30
+            "totalmovies": 30,
+            "image_1": "kuala_lumpur_mall_1.jpg",
+            "image_2": "kuala_lumpur_mall_2.jpg",
+            "image_3": "kuala_lumpur_mall_3.jpg"
         }],
         "status": "active"
     },{
@@ -32,7 +38,10 @@
         "lng": -89.380120,
         "cinemadetails": [{
             "hall": 5,
-            "totalmovies": 19
+            "totalmovies": 19,
+            "image_1": "bangi_giant_1.jpg",
+            "image_2": "bangi_giant_2.jpg",
+            "image_3": "bangi_giant_3.jpg"
         }],
         "status": "active"
     },{
@@ -44,7 +53,10 @@
         "lng": -89.380120,
         "cinemadetails": [{
             "hall": 7,
-            "totalmovies": 25
+            "totalmovies": 25,
+            "image_1": "kajang_international_trade_center_1.jpg",
+            "image_2": "kajang_international_trade_center_2.jpg",
+            "image_3": "kajang_international_trade_center_3.jpg"
         }],
         "status": "active"
     },{
@@ -56,7 +68,10 @@
         "lng": -89.380120,
         "cinemadetails": [{
             "hall": 4,
-            "totalmovies": 16
+            "totalmovies": 16,
+            "image_1": "serdang_square_1.jpg",
+            "image_2": "serdang_square_2.jpg",
+            "image_3": "serdang_square_3.jpg"
         }],
         "status": "active"
     }]

@@ -11,6 +11,11 @@
 <ion-content class="tophits">
     <ion-card *ngFor="let thl of tophitslist; let i = index">
         <a clear (click)="watchtrailer(tophitslist[i], thl.moviedetails[0])">
+            <div class="wrapper" [hidden]="thl.discount == 0">
+                <div class="ribbon-wrapper-yellow">
+                    <div class="ribbon-yellow">Off {{thl.discount}}%</div>
+                </div>
+            </div>
             <img src="img/poster_land/{{thl.image_land}}" />
             <div class="card-title">{{thl.moviename}}</div>
             <p class="like-count">

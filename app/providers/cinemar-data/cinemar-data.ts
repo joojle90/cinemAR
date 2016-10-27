@@ -97,5 +97,24 @@ export class CinemarData {
         });
     }
 
+    getSelectionCinemaDD(movieid: any) {
+        return this.load('movielist.json').then(data => {
+            let moviecinemas = data.movielist.filter(thecinema => {
+                return thecinema.movieid === movieid && thecinema.status === "active";
+            });
+            console.log(moviecinemas);
+            return moviecinemas[0].cinemamovie;
+        });
+    }
+
+    getSelectionDateDD(movieid: any, cinemaid: any) {
+        return this.load('movieschedule.json').then(data => {
+            let moviedate = data.movieschedule.filter(themoviedate => {
+                return themoviedate.movieid === movieid && themoviedate.cinemaid === cinemaid && themoviedate.status === "active";
+            });
+            return moviedate.length > 0  ? moviedate[0].scheduledetails : [];
+        });
+    }
+
 }
 
