@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Cinema : {{getcinemadetails.cinemaname}}</ion-title>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="movielistbycinema">
+    <ion-list>
+        <div class="logo">
+            <ion-slides id="slider" pager [options]="slideconf">
+                <ion-slide *ngFor="let gci of getcinemaimages; let i = index">
+                    <img src="img/cinema_images/{{gci.image}}" class="slide-image" onError="this.src='img/misc/default.png'"/>
+                </ion-slide>
+            </ion-slides>
+        </div>
+    </ion-list>
+</ion-content>

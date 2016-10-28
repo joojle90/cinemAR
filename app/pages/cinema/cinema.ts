@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { MovielistbycinemaPage } from '../../pages/movielistbycinema/movielistbycinema';
 
 @Component({
     templateUrl: 'build/pages/cinema/cinema.html',
@@ -28,6 +29,11 @@ export class CinemaPage {
 
     moviesbycinema(getmoviedetails) {
         console.log(getmoviedetails);
+        this.navCtrl.push(MovielistbycinemaPage, {
+            cinemaid: getmoviedetails.cinemaid,
+            cinemaname: getmoviedetails.cinemaname,
+            cinemaimages: getmoviedetails.cinemaimages[0]
+        });
     }
 
 }

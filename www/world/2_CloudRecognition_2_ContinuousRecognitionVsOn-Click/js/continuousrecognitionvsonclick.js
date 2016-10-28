@@ -67,6 +67,7 @@ var World = {
       /*
        Clean Resources from previous recognitions.
        */
+        //response.targetInfo.movieID
       // alert(response.targetInfo.name);
       if (World.playButtonImg !== undefined) {
         World.playButtonImg.destroy();

@@ -73,6 +73,10 @@ export class NowshowingPage {
         });
     }
 
+    test() {
+        this.navCtrl.push(BookticketPage);
+    }
+
     watchtrailer(movieitems, moviedetails) {
         let showa = movieitems.showtime.split(" ");
         let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
@@ -166,15 +170,16 @@ export class NowshowingPage {
 
                 //cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
                 if ( action.indexOf('shareInFacebook') > -1) {
-                    SocialSharing
-                    //Share via native share sheet
-                    .shareViaFacebook(message,  image, link)
-                    .then(function(result) {
-                        //Success!
-                    }, function(err) {
-                        //An error occured. Show a message to the user
-                        alert("Download and log in to your Facebook App");
-                    });
+                    this.test();
+//                    SocialSharing
+//                    //Share via native share sheet
+//                    .shareViaFacebook(message,  image, link)
+//                    .then(function(result) {
+//                        //Success!
+//                    }, function(err) {
+//                        //An error occured. Show a message to the user
+//                        alert("Download and log in to your Facebook App");
+//                    });
                 } else if ( action.indexOf('shareInTwitter') > -1) {
                     SocialSharing
                     //Share via native share sheet
