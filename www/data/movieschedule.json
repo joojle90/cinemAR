@@ -4,6 +4,7 @@
         "movieid": "CNMV001",
         "cinemaid": "CNSH001",
         "scheduledetails": [{
+            "scheduledateid": "SDID001",
             "scheduledate": "29 Jan 2016",
             "scheduledetail": [{
                 "time": "10.00",
@@ -19,6 +20,7 @@
                 "showseats": "CNSD001_29Jan2016_2155"
             }]
         },{
+            "scheduledateid": "SDID002",
             "scheduledate": "30 Jan 2016",
             "scheduledetail": [{
                 "time": "20.15",
@@ -28,6 +30,7 @@
                 "showseats": "CNSD001_30Jan2016_2310"
             }]
         },{
+            "scheduledateid": "SDID003",
             "scheduledate": "31 Jan 2016",
             "scheduledetail": [{
                 "time": "20.15",

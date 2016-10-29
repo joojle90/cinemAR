@@ -25,7 +25,7 @@ export class CategorymoviesPage {
     }
 
     loadcategoryMovieslist(thegenre: string) {
-        return this.cinemardata.getMoviebyCategory().then(data => {
+        return this.cinemardata.getMovielist().then(data => {
             let mymovies: any = [];
             let movielist = data.sort((a,b) => {
                 let datesortA = a.showtime.split(" ");
