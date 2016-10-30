@@ -12,8 +12,8 @@
     <ion-list>
         <div class="logo">
             <div class="wrapper" [hidden]="getbookingdetails.moviediscount == 0">
-                <div class="ribbon-wrapper-green">
-                    <div class="ribbon-green">Off {{getbookingdetails.moviediscount}}%</div>
+                <div class="ribbon-wrapper-color">
+                    <div class="ribbon-color">Off {{getbookingdetails.moviediscount}}%</div>
                 </div>
             </div>
             <img src="img/poster_land/{{getbookingdetails.movieimage}}">
@@ -28,7 +28,7 @@
 
         <ion-item>
             <ion-label>Cinema</ion-label>
-            <ion-select [(ngModel)]="selectedcinema" (ionChange)="cinemaChange(selectedcinema)">
+            <ion-select [(ngModel)]="selectedcinema" (ionChange)="cinemaChange(selectedcinema)" [disabled]="selectedmovies.movieid === '' ? true : false">
                 <ion-option value="" disabled selected>Select your cinema</ion-option>
                 <ion-option *ngFor="let cndd of selectioncinemasDD" [value]="cndd.cinemaid">{{cndd.cinemaname}}</ion-option>
             </ion-select>
@@ -36,31 +36,28 @@
 
         <ion-item>
             <ion-label>Watch Date</ion-label>
-            <ion-select [(ngModel)]="selecteddate" (ionChange)="dateChange(selecteddate)">
+            <ion-select [(ngModel)]="selecteddate" (ionChange)="dateChange(selecteddate)" [disabled]="selectedcinema === '' ? true : false">
                 <ion-option value="" disabled selected>Select your watch date</ion-option>
-                <ion-option *ngFor="let dtdd of selectiondatesDD" [value]="dtdd.scheduledate">{{dtdd.scheduledate}}</ion-option>
+                <ion-option *ngFor="let dtdd of selectiondatesDD" [value]="dtdd.scheduledateid">{{dtdd.scheduledate}}</ion-option>
             </ion-select>
         </ion-item>
 
         <ion-item>
             <ion-label>Watch Time</ion-label>
-            <ion-select [(ngModel)]="time" disabled>
-                <ion-option value="153153">11:20AM (7 seat left)</ion-option>
-                <ion-option value="153165">12:00PM (20 seat left)</ion-option>
-                <ion-option value="152899">12:40PM (1 seat left)</ion-option>
-                <ion-option value="153151">01:35PM (5 seat left)</ion-option>
-                <ion-option value="153163">02:15PM (8 seat left)</ion-option>
-                <ion-option value="152897">03:05PM (11 seat left)</ion-option>
-                <ion-option value="153149">03:45PM (5 seat left)</ion-option>
-                <ion-option value="153161">04:25PM (4 seat left)</ion-option>
-                <ion-option value="152895">05:35PM (4 seat left)</ion-option>
-                <ion-option value="153147">06:00PM (3 seat left)</ion-option>
-                <ion-option value="153159">06:40PM (1 seat left)</ion-option>
-                <ion-option value="152893">08:00PM (9 seat left)</ion-option>
-                <ion-option value="153145">08:15PM (15 seat left)</ion-option>
-                <ion-option value="153157">08:55PM (12 seat left)</ion-option>
-                <ion-option value="153143">10:25PM (10 seat left)</ion-option>
-                <ion-option value="152891">10:30PM (6 seat left)</ion-option>
+            <ion-select [(ngModel)]="selectedtime" (ionChange)="timeChange(selectedtime)" [disabled]="selecteddate === '' ? true : false">
+                <ion-option value="" disabled selected>Select your watch time</ion-option>
+                <ion-option *ngFor="let tmdd of selectiontimeDD" [value]="tmdd.showseatsid">{{tmdd.time}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Total Attendance</ion-label>
+            <ion-select [disabled]="selectedtime === '' ? true : false">
+                <ion-option value="" disabled selected>Select your person</ion-option>
+                <ion-option value="1">1</ion-option>
+                <ion-option value="2">2</ion-option>
+                <ion-option value="3">3</ion-option>
+                <ion-option value="4">4</ion-option>
             </ion-select>
         </ion-item>
 

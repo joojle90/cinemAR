@@ -110,5 +110,17 @@ export class CinemarData {
         });
     }
 
+    getSelectionTimeDD(dateid: any) {
+        return this.load('movieschedule.json').then(data => {
+            let movietime = data.movieschedule[0].scheduledetails;
+
+            for(let i in movietime) {
+                if(movietime[i].scheduledateid === dateid) {
+                    return movietime[i].scheduledetail;
+                }
+            }
+        });
+    }
+
 }
 

@@ -8,36 +8,36 @@
             "scheduledate": "29 Jan 2016",
             "scheduledetail": [{
                 "time": "10.00",
-                "showseats": "CNSD001_29Jan2016_1000"
+                "showseatsid": "SSID1000"
             },{
                 "time": "13.40",
-                "showseats": "CNSD001_29Jan2016_1340"
+                "showseatsid": "SSID1340"
             },{
                 "time": "18.30",
-                "showseats": "CNSD001_29Jan2016_1830"
+                "showseatsid": "SSID1830"
             },{
                 "time": "21.55",
-                "showseats": "CNSD001_29Jan2016_2155"
+                "showseatsid": "SSID2155"
             }]
         },{
             "scheduledateid": "SDID002",
             "scheduledate": "30 Jan 2016",
             "scheduledetail": [{
                 "time": "20.15",
-                "showseats": "CNSD001_30Jan2016_2015"
+                "showseatsid": "SSID2015"
             },{
                 "time": "23.10",
-                "showseats": "CNSD001_30Jan2016_2310"
+                "showseatsid": "SSID2310"
             }]
         },{
             "scheduledateid": "SDID003",
             "scheduledate": "31 Jan 2016",
             "scheduledetail": [{
-                "time": "20.15",
-                "showseats": "CNSD001_31Jan2016_1130"
+                "time": "20.30",
+                "showseatsid": "SSID2030"
             },{
-                "time": "23.10",
-                "showseats": "CNSD001_31Jan2016_1920"
+                "time": "23.45",
+                "showseatsid": "SSID2345"
             }]
         }],
         "status": "active"

@@ -10,9 +10,11 @@ export class BookticketPage {
     selectionmoviesDD: string[];
     selectioncinemasDD: string[];
     selectiondatesDD: string[];
+    selectiontimeDD: string[];
     selectedmovies: any;
     selectedcinema: any;
     selecteddate: any;
+    selectedtime: any;
 
     idmovie: string;
 
@@ -32,6 +34,7 @@ export class BookticketPage {
         }
         this.selectedcinema = "";
         this.selecteddate = "";
+        this.selectedtime = "";
     }
 
     loadmovieselection() {
@@ -55,11 +58,20 @@ export class BookticketPage {
         this.selecteddate = "";
         return this.cinemardata.getSelectionDateDD(this.idmovie, selectedcinema).then(data => {
             this.selectiondatesDD = data;
+            console.log(data);
         });
     }
 
     dateChange(selecteddate) {
-        console.log(selecteddate);
+        this.selectedtime = "";
+        return this.cinemardata.getSelectionTimeDD(selecteddate).then(data => {
+            this.selectiontimeDD = data;
+            console.log(data);
+        });
+    }
+
+    timeChange(selectedtime) {
+        console.log(selectedtime);
     }
 
 }

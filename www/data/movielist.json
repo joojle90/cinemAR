@@ -6,7 +6,7 @@
         "image_potr": "the_angry_bird.jpg",
         "image_land": "the_angry_bird.jpg",
         "showtime": "29 Jan 2016",
-        "endshow": "31 Feb 2016",
+        "endshow": "31 Jan 2016",
         "like": 640,
         "duration": 130,
         "discount": 20,
@@ -86,7 +86,7 @@
         "duration": 170,
         "discount": 0,
         "moviedetails": [{
-            "synopsis": "t's been nearly a decade since Tarzan (Alexander Skarsgård), also known as John Clayton III, left Africa to live in Victorian England with his wife Jane. Danger lurks on the horizon as Leon Rom (Christoph Waltz), a treacherous envoy for King Leopold, devises a scheme that lures the couple to the Congo. Rom plans to capture Tarzan and deliver him to an old enemy in exchange for diamonds. When Jane becomes a pawn in his devious plot, Tarzan must return to the jungle to save the woman he loves.",
+            "synopsis": "It's been nearly a decade since Tarzan (Alexander Skarsgård), also known as John Clayton III, left Africa to live in Victorian England with his wife Jane. Danger lurks on the horizon as Leon Rom (Christoph Waltz), a treacherous envoy for King Leopold, devises a scheme that lures the couple to the Congo. Rom plans to capture Tarzan and deliver him to an old enemy in exchange for diamonds. When Jane becomes a pawn in his devious plot, Tarzan must return to the jungle to save the woman he loves.",
             "trailer": "Aj7ty6sViiU",
             "audience": 13,
             "genre": [{
@@ -218,7 +218,7 @@
             }, {
                 "lang": "Malay"
             }],
-            "directedby": " Syamsul Yusof"
+            "directedby": "Syamsul Yusof"
         }],
         "cinemamovie": [{
             "cinemaid": "CNSH004",
@@ -252,7 +252,7 @@
             "subtitle": [{
                 "lang": "Malay"
             }],
-            "directedby": " Nizam Razak"
+            "directedby": "Nizam Razak"
         }],
         "cinemamovie": [{
             "cinemaid": "CNSH001",
@@ -286,7 +286,7 @@
             "subtitle": [{
                 "lang": "Malay"
             }],
-            "directedby": " Faisal Ishak"
+            "directedby": "Faisal Ishak"
         }],
         "cinemamovie": [{
             "cinemaid": "CNSH003",
