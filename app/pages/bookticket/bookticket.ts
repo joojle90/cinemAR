@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, LoadingController, AlertController, ModalController, ViewController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
 
 @Component({
@@ -15,12 +15,14 @@ export class BookticketPage {
     selectedcinema: any;
     selecteddate: any;
     selectedtime: any;
+    selectedticket: any;
 
     idmovie: string;
 
     constructor(
         private navCtrl: NavController,
         private navParams: NavParams,
+        public modalCtrl: ModalController,
         public cinemardata: CinemarData
     ) {
         this.getbookingdetails = this.navParams.data;
@@ -35,6 +37,7 @@ export class BookticketPage {
         this.selectedcinema = "";
         this.selecteddate = "";
         this.selectedtime = "";
+        this.selectedticket = "";
     }
 
     loadmovieselection() {
@@ -71,7 +74,50 @@ export class BookticketPage {
     }
 
     timeChange(selectedtime) {
+        this.selectedticket = "";
         console.log(selectedtime);
+    }
+
+    ticketchange(selectedticket) {
+        this.selectedticket = selectedticket;
+    }
+
+    selectseats() {
+        let modal = this.modalCtrl.create(SelectSeatPage, {
+            totalticket: this.selectedticket
+        });
+        modal.present();
+    }
+
+}
+
+@Component({
+    templateUrl: 'build/pages/bookticket/bookticket-selectseat.html',
+})
+export class SelectSeatPage {
+    totalticket: number;
+
+    constructor(
+        private navCtrl: NavController,
+        private navParams: NavParams,
+        private alertCtrl: AlertController,
+        public viewCtrl: ViewController
+    ) {
+        this.totalticket = this.navParams.data['totalticket'];
+        console.log(this.totalticket);
+    }
+
+    dismiss() {
+        this.viewCtrl.dismiss();
+    }
+
+    sendemail() {
+        let alert = this.alertCtrl.create({
+          title: 'Successful Email',
+          subTitle: 'Your email has been sent',
+          buttons: ['OK']
+        });
+        alert.present();
     }
 
 }

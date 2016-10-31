@@ -1,6 +1,6 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>Book Ticket : {{getbookingdetails.movienames}}</ion-title>
+        <ion-title>Ticket : {{getbookingdetails.movienames}}</ion-title>
         <button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
@@ -19,7 +19,7 @@
             <img src="img/poster_land/{{getbookingdetails.movieimage}}">
         </div>
         <ion-item>
-            <ion-label>Movie Name</ion-label>
+            <ion-label>Movie name</ion-label>
             <ion-select [(ngModel)]="selectedmovies.movieid">
                 <ion-option value="" disabled selected>Select your movie</ion-option>
                 <ion-option *ngFor="let mvdd of selectionmoviesDD" [value]="mvdd.movieid" disabled>{{mvdd.moviename}}</ion-option>
@@ -35,7 +35,7 @@
         </ion-item>
 
         <ion-item>
-            <ion-label>Watch Date</ion-label>
+            <ion-label>Watch date</ion-label>
             <ion-select [(ngModel)]="selecteddate" (ionChange)="dateChange(selecteddate)" [disabled]="selectedcinema === '' ? true : false">
                 <ion-option value="" disabled selected>Select your watch date</ion-option>
                 <ion-option *ngFor="let dtdd of selectiondatesDD" [value]="dtdd.scheduledateid">{{dtdd.scheduledate}}</ion-option>
@@ -43,7 +43,7 @@
         </ion-item>
 
         <ion-item>
-            <ion-label>Watch Time</ion-label>
+            <ion-label>Watch time</ion-label>
             <ion-select [(ngModel)]="selectedtime" (ionChange)="timeChange(selectedtime)" [disabled]="selecteddate === '' ? true : false">
                 <ion-option value="" disabled selected>Select your watch time</ion-option>
                 <ion-option *ngFor="let tmdd of selectiontimeDD" [value]="tmdd.showseatsid">{{tmdd.time}}</ion-option>
@@ -51,15 +51,18 @@
         </ion-item>
 
         <ion-item>
-            <ion-label>Total Attendance</ion-label>
-            <ion-select [disabled]="selectedtime === '' ? true : false">
-                <ion-option value="" disabled selected>Select your person</ion-option>
-                <ion-option value="1">1</ion-option>
-                <ion-option value="2">2</ion-option>
-                <ion-option value="3">3</ion-option>
-                <ion-option value="4">4</ion-option>
+            <ion-label>Total ticket</ion-label> <!--[disabled]="selectedtime === '' ? true : false"!-->
+            <ion-select [(ngModel)]="selectedticket" (ionChange)="ticketchange(selectedticket)">
+                <ion-option value="" disabled selected>Select your ticket</ion-option>
+                <ion-option value="1">1 person</ion-option>
+                <ion-option value="2">2 person</ion-option>
+                <ion-option value="3">3 person</ion-option>
+                <ion-option value="4">4 person</ion-option>
             </ion-select>
         </ion-item>
 
+        <div padding>
+            <button block [disabled]="selectedticket === '' ? true : false" (click)="selectseats()">Select Seat</button>
+        </div>
     </ion-list>
 </ion-content>
