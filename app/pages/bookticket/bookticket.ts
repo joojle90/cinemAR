@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, LoadingController, AlertController, ModalController, ViewController } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { SelectseatsPage } from '../../pages/selectseats/selectseats';
 
 @Component({
     templateUrl: 'build/pages/bookticket/bookticket.html',
@@ -83,10 +84,9 @@ export class BookticketPage {
     }
 
     selectseats() {
-        let modal = this.modalCtrl.create(SelectSeatPage, {
+        this.navCtrl.push(SelectseatsPage, {
             totalticket: this.selectedticket
         });
-        modal.present();
     }
 
 }
