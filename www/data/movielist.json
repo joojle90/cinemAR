@@ -366,5 +366,367 @@
             "cinemaname": "Serdang Square"
         }],
         "status": "active"
+    },
+    {
+        "movieid": "CNMV0011",
+        "moviename": "Rock Bro",
+        "image_small": "rock_bro.jpg",
+        "image_potr": "rock_bro.jpg",
+        "image_land": "rock_bro.jpg",
+        "showtime": "01 Nov 2016",
+        "endshow": "03 Nov 2016",
+        "like": 569,
+        "duration": 119,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "‘ROCK BRO! Kembali Ke Pangkal Jalan’ is the long awaited third and final installment of the ROCK! film series, which tells the journey of Rimba Bara, a fictitious rock band that was famous in the late 1980s. The story of the hard reality of 1980s rock era in Malaysia is told with humor and bittersweet drama in this movie. In this third installment, the story is narrated from the point of view of Jijo (Khir Rahman), of their journey between the period in which Rimba Bara had already made it as a popular rock band, the trials and tribulations that they still went through, politics of the music industry at that time, the love story between Jijo and our ‘ratu rock’ Ella, right up to the band’s tragic demise in the end.",
+            "trailer": "gkJ1_KVH29Y",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Mamat Khalid"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0012",
+        "moviename": "Dr Strange",
+        "image_small": "dr_strange.jpg",
+        "image_potr": "dr_strange.jpg",
+        "image_land": "dr_strange.jpg",
+        "showtime": "27 Oct 2016",
+        "endshow": "28 Oct 2016",
+        "like": 523,
+        "duration": 115,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under his wing and trains him to defend the world against evil.",
+            "trailer": "HSzx-zryEgM",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Mamat Khalid"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0013",
+        "moviename": "Jack Reacher",
+        "image_small": "jack_reacher.jpg",
+        "image_potr": "jack_reacher.jpg",
+        "image_land": "jack_reacher.jpg",
+        "showtime": "20 Oct 2016",
+        "endshow": "22 Oct 2016",
+        "like": 9582,
+        "duration": 118,
+        "discount": 20,
+        "moviedetails": [{
+            "synopsis": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
+            "trailer": "aRwrdbcAh2s",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "English"
+            }],
+            "directedby": "Edward Zwick"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH002",
+            "cinemaname": "Kuala Lumpur Mall"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0014",
+        "moviename": "The Girl",
+        "image_small": "the_girl.jpg",
+        "image_potr": "the_girl.jpg",
+        "image_land": "the_girl.jpg",
+        "showtime": "01 Nov 2016",
+        "endshow": "03 Nov 2016",
+        "like": 2648,
+        "duration": 89,
+        "discount": 20,
+        "moviedetails": [{
+            "synopsis": "After a family moves into an old Victorian home, they discover a chest in the attic containing antiques tainted by a malevolent spirit. As the antiques slowly possess each family member, the spirit grows stronger, hell bent on kidnapping the children.",
+            "trailer": "oeCeLu8Nj2M",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror"
+            }],
+            "subtitle": [{
+                "lang": "English"
+            }],
+            "directedby": "Thomas Della Bella"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH002",
+            "cinemaname": "Kuala Lumpur Mall"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0015",
+        "moviename": "Max Steel",
+        "image_small": "max_steel.jpg",
+        "image_potr": "max_steel.jpg",
+        "image_land": "max_steel.jpg",
+        "showtime": "03 Nov 2016",
+        "endshow": "04 Nov 2016",
+        "like": 5468,
+        "duration": 93,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "This origin story follows teenager Max McGrath (Ben Winchell) and his alien friend, Steel, who combine their powers to become the turbo-charged superhero, Max Steel. When mysterious forces threaten their world, the unlikely pair begin to uncover secrets that only the both of them can uncover to save the world.",
+            "trailer": "OA41E8Ei_5U",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "genre": [{
+                "genrename": "Thriller"
+            }],
+            "subtitle": [{
+                "lang": "English"
+            }],
+            "directedby": "Stewart Hendler"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0016",
+        "moviename": "Unspoken",
+        "image_small": "unspoken.jpg",
+        "image_potr": "unspoken.jpg",
+        "image_land": "unspoken.jpg",
+        "showtime": "04 Nov 2016",
+        "endshow": "05 Nov 2016",
+        "like": 4354,
+        "duration": 90,
+        "discount": 30,
+        "moviedetails": [{
+            "synopsis": "In 1997, the Anderson family vanished from their home without a single trace. No one knows if the family members are alive or dead as no bodies were ever found. For 17 years, the house remains untouched and undisturbed - that is, until now.",
+            "trailer": "JAVxMRzSTAk",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Sheldon Wilson"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0017",
+        "moviename": "The Doll",
+        "image_small": "the_doll.jpg",
+        "image_potr": "the_doll.jpg",
+        "image_land": "the_doll.jpg",
+        "showtime": "10 Nov 2016",
+        "endshow": "12 Nov 2016",
+        "like": 45,
+        "duration": 116,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "Husband and wife, Anya and Daniel have just moved into a new house in Bandung and are ready to take on their new life. Accidentally, Daniel took a doll home from a construction site where he works on Siliwangi road. The doll was hung on a tree which was later cut down in order to make way for Daniel’s real estate project. Anya, who happens to be a doll maker, happily took the doll at home and placed it in her room. However, Niken, their neighbor, was shocked to see the doll. The doll’s name is Ghawiah, which means one who is evil and follows its desires. It is said that the doll belonged to a little girl named Uci who died when she and her family were brutally murdered in a robbery. Strange things start to happen, including the doll moving by itself, the doorbell ringing with no one outside, and the voice of a little girl in the middle of the night. ",
+            "trailer": "wmxaPlPJxqU",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Rocky Soraya"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0018",
+        "moviename": "Hanyut",
+        "image_small": "hanyut.jpg",
+        "image_potr": "hanyut.jpg",
+        "image_land": "hanyut.jpg",
+        "showtime": "24 Nov 2016",
+        "endshow": "25 Nov 2016",
+        "like": 25,
+        "duration": 163,
+        "discount": 20,
+        "moviedetails": [{
+            "synopsis": "Based on Joseph Conrad`s 1895 novel Almayer`s Folly, this epic film tells the story of Kaspar Almayer actor Peter O`Brien), a English trader struggling to survive in Malaysia at the turn of the 19th Century. His dream of finding a mythical gold mountain is challenged by his scheming wife, the colonial authorities, the political machinations of the local chief and Arab traders, and his daughter`s love for a freedom-fighting Malay prince, Dain Maroola",
+            "trailer": "bLOAUTHrL8c",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "English"
+            }],
+            "directedby": "U-Wei Haji Shaari"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0019",
+        "moviename": "Fallen",
+        "image_small": "fallen.jpg",
+        "image_potr": "fallen.jpg",
+        "image_land": "fallen.jpg",
+        "showtime": "10 Nov 2016",
+        "endshow": "12 Nov 2016",
+        "like": 53,
+        "duration": 192,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "Adapted from the 2009’s Youth Adult No.1 Worldwide Bestseller novel, Lucinda Price is sent to a reform academy under the assumption that she has killed a boy. There she meets two mysterious boys, Cam and Daniel unaware to her are Angels, to both of whom she feels drawn. But as the love triangle unfurls, it is Daniel that Luce cannot keep herself away from, and things begin to take a darker turn when she finds out his true identity.",
+            "trailer": "O-MRLGxczj8",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Horror"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Scott Hicks"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0020",
+        "moviename": "Shut In",
+        "image_small": "shut_in.jpg",
+        "image_potr": "shut_in.jpg",
+        "image_land": "shut_in.jpg",
+        "showtime": "10 Nov 2016",
+        "endshow": "11 Nov 2016",
+        "like": 23,
+        "duration": 164,
+        "discount": 10,
+        "moviedetails": [{
+            "synopsis": "A heart-pounding thriller about a widowed child psychologist who lives in an isolated existence in rural New England. Caught in a deadly winter storm, she must find a way to rescue a young boy before he disappears forever.",
+            "trailer": "LbCs-LTJqaM",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Thriller"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Farren Blackburn"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
     }]
 }

@@ -51,8 +51,8 @@
         </ion-item>
 
         <ion-item>
-            <ion-label>Total ticket</ion-label> <!--[disabled]="selectedtime === '' ? true : false"!-->
-            <ion-select [(ngModel)]="selectedticket" (ionChange)="ticketchange(selectedticket)">
+            <ion-label>Total ticket</ion-label> <!--!-->
+            <ion-select [(ngModel)]="selectedticket" (ionChange)="ticketchange(selectedticket)" [disabled]="selectedtime === '' ? true : false">
                 <ion-option value="" disabled selected>Select your ticket</ion-option>
                 <ion-option value="1">1 person</ion-option>
                 <ion-option value="2">2 person</ion-option>
