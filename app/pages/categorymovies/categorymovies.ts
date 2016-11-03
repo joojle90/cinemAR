@@ -27,15 +27,8 @@ export class CategorymoviesPage {
     loadcategoryMovieslist(thegenre: string) {
         return this.cinemardata.getMovielist().then(data => {
             let mymovies: any = [];
-            let movielist = data.sort((a,b) => {
-                let datesortA = a.showtime.split(" ");
-                let datesortB = b.showtime.split(" ");
-                let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
-                let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
-                return newdateB > newdateA;
-            });
 
-            for (let i in movielist) {
+            for (let i in data) {
                 let showdate = data[i].showtime.split(" ");
                 let theshowdate = new Date (showdate[2], monthname.indexOf(showdate[1].toLowerCase()), showdate[0]);
 
@@ -43,22 +36,36 @@ export class CategorymoviesPage {
                     mymovies.push({
                         movieitems: data[i],
                         moviedetails: data[i].moviedetails,
+                        showtime: data[i].showtime,
                         genrename: data[i].moviedetails[j].genre,
                         moviestatus: data[i].status,
+                        discount: data[i].discount > 0 ?  data[i].discount : 0,
                         comingshow: theshowdate > new Date() ?  1 : 0
                     });
                 }
             }
 
-            this.moviesbycategories = mymovies.filter((datamovies, j) => {
+            let movielist = mymovies.sort((a,b) => {
+                let datesortA = a.showtime.split(" ");
+                let datesortB = b.showtime.split(" ");
+                let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
+                let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
+                console.log(newdateA);
+                console.log(newdateB);
+                return newdateB > newdateA;
+            });
+
+            this.moviesbycategories = movielist.filter((datamovies, j) => {
                 for (let i in datamovies.genrename) {
-                    if(datamovies.genrename[i].genrename === thegenre && mymovies[j].moviestatus === "active") {
-                        console.log(mymovies[j]);
-                        this.moviesbycategories = mymovies[j]
+                    if(datamovies.genrename[i].genrename === thegenre && movielist[j].moviestatus === "active") {
+//                        console.log(movielist[j]);
+                        this.moviesbycategories = movielist[j]
                         return this.moviesbycategories;
                     }
                 }
             });
+
+            console.log(this.moviesbycategories);
         })
     }
 

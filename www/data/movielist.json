@@ -16,12 +16,12 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Animation"
-            }, {
+            },{
                 "genrename": "Adventure"
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "Clay Kaytis"
@@ -55,12 +55,14 @@
             "audience": 18,
             "genre": [{
                 "genrename": "Action"
-            }, {
+            },{
                 "genrename": "Adventure"
+            },{
+                "genrename": "Comedy"
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "David Ayer"
@@ -91,14 +93,16 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
-            }, {
+            },{
                 "genrename": "Adventure"
-            }, {
-                "genrename": "Drama"
+            },{
+                "genrename": "Romance"
+            },{
+                "genrename": "Sci-fi"
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "David Yates"
@@ -135,14 +139,16 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
-            }, {
+            },{
                 "genrename": "Adventure"
-            }, {
+            },{
                 "genrename": "Thriller"
+            },{
+                "genrename": "Sci-fi"
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "Peter Berg"
@@ -176,12 +182,12 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Horror"
-            }, {
+            },{
                 "genrename": "Thriller"
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "David F. Sandberg"
@@ -215,7 +221,7 @@
             }],
             "subtitle": [{
                 "lang": "English"
-            }, {
+            },{
                 "lang": "Malay"
             }],
             "directedby": "Syamsul Yusof"
@@ -245,9 +251,11 @@
             "trailer": "4shpW9bq2sE",
             "audience": 13,
             "genre": [{
-                "genrename": "Animation "
+                "genrename": "Animation"
             },{
                 "genrename": "Action"
+            },{
+                "genrename": "Fantasy"
             }],
             "subtitle": [{
                 "lang": "Malay"
@@ -282,6 +290,8 @@
                 "genrename": "Horror"
             },{
                 "genrename": "Action"
+            },{
+                "genrename": "Comedy"
             }],
             "subtitle": [{
                 "lang": "Malay"
@@ -349,6 +359,8 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
+            },{
+                "genrename": "Comedy"
             }],
             "subtitle": [{
                 "lang": "Malay"
@@ -377,13 +389,15 @@
         "endshow": "03 Nov 2016",
         "like": 569,
         "duration": 119,
-        "discount": 10,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "‘ROCK BRO! Kembali Ke Pangkal Jalan’ is the long awaited third and final installment of the ROCK! film series, which tells the journey of Rimba Bara, a fictitious rock band that was famous in the late 1980s. The story of the hard reality of 1980s rock era in Malaysia is told with humor and bittersweet drama in this movie. In this third installment, the story is narrated from the point of view of Jijo (Khir Rahman), of their journey between the period in which Rimba Bara had already made it as a popular rock band, the trials and tribulations that they still went through, politics of the music industry at that time, the love story between Jijo and our ‘ratu rock’ Ella, right up to the band’s tragic demise in the end.",
             "trailer": "gkJ1_KVH29Y",
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
+            },{
+                "genrename": "Comedy"
             }],
             "subtitle": [{
                 "lang": "Malay"
@@ -419,6 +433,10 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
+            },{
+                "genrename": "Sci-fi"
+            },{
+                "genrename": "Fantasy"
             }],
             "subtitle": [{
                 "lang": "Malay"
@@ -447,13 +465,15 @@
         "endshow": "22 Oct 2016",
         "like": 9582,
         "duration": 118,
-        "discount": 20,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "Jack Reacher must uncover the truth behind a major government conspiracy in order to clear his name. On the run as a fugitive from the law, Reacher uncovers a potential secret from his past that could change his life forever.",
             "trailer": "aRwrdbcAh2s",
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
+            },{
+                "genrename": "Romance"
             }],
             "subtitle": [{
                 "lang": "English"
@@ -482,13 +502,15 @@
         "endshow": "03 Nov 2016",
         "like": 2648,
         "duration": 89,
-        "discount": 20,
+        "discount": 15,
         "moviedetails": [{
             "synopsis": "After a family moves into an old Victorian home, they discover a chest in the attic containing antiques tainted by a malevolent spirit. As the antiques slowly possess each family member, the spirit grows stronger, hell bent on kidnapping the children.",
             "trailer": "oeCeLu8Nj2M",
             "audience": 13,
             "genre": [{
                 "genrename": "Horror"
+            },{
+                "genrename": "Thriller"
             }],
             "subtitle": [{
                 "lang": "English"
@@ -524,9 +546,12 @@
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
-            }],
-            "genre": [{
+            },{
                 "genrename": "Thriller"
+            },{
+                "genrename": "Sci-fi"
+            },{
+                "genrename": "Fantasy"
             }],
             "subtitle": [{
                 "lang": "English"
@@ -555,7 +580,7 @@
         "endshow": "05 Nov 2016",
         "like": 4354,
         "duration": 90,
-        "discount": 30,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "In 1997, the Anderson family vanished from their home without a single trace. No one knows if the family members are alive or dead as no bodies were ever found. For 17 years, the house remains untouched and undisturbed - that is, until now.",
             "trailer": "JAVxMRzSTAk",
@@ -590,7 +615,7 @@
         "endshow": "12 Nov 2016",
         "like": 45,
         "duration": 116,
-        "discount": 10,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "Husband and wife, Anya and Daniel have just moved into a new house in Bandung and are ready to take on their new life. Accidentally, Daniel took a doll home from a construction site where he works on Siliwangi road. The doll was hung on a tree which was later cut down in order to make way for Daniel’s real estate project. Anya, who happens to be a doll maker, happily took the doll at home and placed it in her room. However, Niken, their neighbor, was shocked to see the doll. The doll’s name is Ghawiah, which means one who is evil and follows its desires. It is said that the doll belonged to a little girl named Uci who died when she and her family were brutally murdered in a robbery. Strange things start to happen, including the doll moving by itself, the doorbell ringing with no one outside, and the voice of a little girl in the middle of the night. ",
             "trailer": "wmxaPlPJxqU",
@@ -625,13 +650,15 @@
         "endshow": "25 Nov 2016",
         "like": 25,
         "duration": 163,
-        "discount": 20,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "Based on Joseph Conrad`s 1895 novel Almayer`s Folly, this epic film tells the story of Kaspar Almayer actor Peter O`Brien), a English trader struggling to survive in Malaysia at the turn of the 19th Century. His dream of finding a mythical gold mountain is challenged by his scheming wife, the colonial authorities, the political machinations of the local chief and Arab traders, and his daughter`s love for a freedom-fighting Malay prince, Dain Maroola",
             "trailer": "bLOAUTHrL8c",
             "audience": 13,
             "genre": [{
                 "genrename": "Action"
+            },{
+                "genrename": "Romance"
             }],
             "subtitle": [{
                 "lang": "English"
@@ -663,7 +690,7 @@
         "endshow": "12 Nov 2016",
         "like": 53,
         "duration": 192,
-        "discount": 10,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "Adapted from the 2009’s Youth Adult No.1 Worldwide Bestseller novel, Lucinda Price is sent to a reform academy under the assumption that she has killed a boy. There she meets two mysterious boys, Cam and Daniel unaware to her are Angels, to both of whom she feels drawn. But as the love triangle unfurls, it is Daniel that Luce cannot keep herself away from, and things begin to take a darker turn when she finds out his true identity.",
             "trailer": "O-MRLGxczj8",
@@ -701,13 +728,15 @@
         "endshow": "11 Nov 2016",
         "like": 23,
         "duration": 164,
-        "discount": 10,
+        "discount": 0,
         "moviedetails": [{
             "synopsis": "A heart-pounding thriller about a widowed child psychologist who lives in an isolated existence in rural New England. Caught in a deadly winter storm, she must find a way to rescue a young boy before he disappears forever.",
             "trailer": "LbCs-LTJqaM",
             "audience": 13,
             "genre": [{
                 "genrename": "Thriller"
+            },{
+                "genrename": "Horror"
             }],
             "subtitle": [{
                 "lang": "Malay"

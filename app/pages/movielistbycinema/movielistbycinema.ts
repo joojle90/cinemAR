@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CinemarData } from '../../providers/cinemar-data/cinemar-data';
+import { MoviedetailsPage } from '../../pages/moviedetails/moviedetails';
+import { BookticketPage } from '../../pages/bookticket/bookticket';
 
 let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
                  "sep", "oct", "nov", "dec"];
@@ -12,6 +14,7 @@ let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
 export class MovielistbycinemaPage {
     getcinemadetails: string[];
     getcinemaimages: string[];
+    listmovies: string[];
     slideconf: any;
 
     constructor(
@@ -41,59 +44,71 @@ export class MovielistbycinemaPage {
 
     loadmoviesbycinema(thecinema: string) {
         return this.cinemardata.getMovielist().then(data => {
+            console.log(thecinema);
             let mymovies: any = [];
-            let movielist = data.sort((a,b) => {
+
+            for(let i in data) {
+                let showdate = data[i].showtime.split(" ");
+                let theshowdate = new Date (showdate[2], monthname.indexOf(showdate[1].toLowerCase()), showdate[0]);
+
+                for(let j in data[i].cinemamovie) {
+                    if(data[i].cinemamovie[j].cinemaid === thecinema) {
+                        mymovies.push({
+                            movieid: data[i].movieid,
+                            moviename: data[i].moviename,
+                            image_small: data[i].image_small,
+                            image_land: data[i].image_land,
+                            moviedetails: data[i].moviedetails,
+                            duration: data[i].duration,
+                            showtime: data[i].showtime,
+                            status: data[i].status,
+                            like: data[i].like,
+                            discount: data[i].discount > 0 ?  data[i].discount : 0,
+                            comingshow: theshowdate > new Date() ?  1 : 0,
+                            cinemastatus: true
+                        });
+                    }
+                }
+            }
+
+            let movielist = mymovies.sort((a,b) => {
                 let datesortA = a.showtime.split(" ");
                 let datesortB = b.showtime.split(" ");
                 let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
                 let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
                 return newdateB > newdateA;
             });
-            console.log(thecinema);
 
-            for(let i in movielist) {
-                let showdate = movielist[i].showtime.split(" ");
-                let theshowdate = new Date (showdate[2], monthname.indexOf(showdate[1].toLowerCase()), showdate[0]);
-
-                for(let j in movielist[i].cinemamovie) {
-                    if(movielist[i].cinemamovie[j].cinemaid === thecinema) {
-                        mymovies.push({
-                            movieitems: movielist[i],
-                            moviedetails: movielist[i].moviedetails,
-                            moviestatus: data[i].status,
-                            discount: movielist[i].discount > 0 ?  1 : 0,
-                            comingshow: theshowdate > new Date() ?  1 : 0
-                        });
-                    }
-                }
-            }
-                        console.log(mymovies);
-
-//            for (let i in movielist) {
-//                let showdate = data[i].showtime.split(" ");
-//                let theshowdate = new Date (showdate[2], monthname.indexOf(showdate[1].toLowerCase()), showdate[0]);
-//
-//                for (let j in data[i].cinemamovie) {
-//                    mymovies.push({
-//                        movieitems: data[i],
-//                        moviedetails: data[i].moviedetails,
-//                        genrename: data[i].moviedetails[j].genre,
-//                        moviestatus: data[i].status,
-//                        comingshow: theshowdate > new Date() ?  1 : 0
-//                    });
-//                }
-//            }
-//
-//            this.moviesbycategories = mymovies.filter((datamovies, j) => {
-//                for (let i in datamovies.genrename) {
-//                    if(datamovies.genrename[i].genrename === thegenre && mymovies[j].moviestatus === "active") {
-//                        console.log(mymovies[j]);
-//                        this.moviesbycategories = mymovies[j]
-//                        return this.moviesbycategories;
-//                    }
-//                }
-//            });
+            this.listmovies = movielist;
+            console.log(movielist);
         })
+    }
+
+    bookticket(getmovieitems) {
+        console.log(getmovieitems);
+        this.navCtrl.push(BookticketPage, {
+            movieid: getmovieitems.movieid,
+            movieimage: getmovieitems.image_land,
+            movienames: getmovieitems.moviename,
+            moviediscount: getmovieitems.discount
+        });
+    }
+
+    watchtrailer(movieitems, moviedetails) {
+        console.log(movieitems);
+        let showa = movieitems.showtime.split(" ");
+        let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
+
+        this.navCtrl.push(MoviedetailsPage, {
+            movieid: movieitems.movieid,
+            image: movieitems.image_land,
+            showtimes: movieitems.showtime,
+            movienames: movieitems.moviename,
+            likes: movieitems.like,
+            moviedetails: moviedetails,
+            discount: movieitems.discount,
+            comingshow: theshow > new Date() ?  1 : 0
+        });
     }
 
 }
