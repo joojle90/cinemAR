@@ -76,7 +76,7 @@ export class MovielistbycinemaPage {
                 let datesortB = b.showtime.split(" ");
                 let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
                 let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
-                return newdateB > newdateA;
+                return newdateB > newdateA ? 1 : -1;
             });
 
             this.listmovies = movielist;

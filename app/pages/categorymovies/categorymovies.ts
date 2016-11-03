@@ -52,7 +52,7 @@ export class CategorymoviesPage {
                 let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
                 console.log(newdateA);
                 console.log(newdateB);
-                return newdateB > newdateA;
+                return newdateB > newdateA ? 1 : -1;
             });
 
             this.moviesbycategories = movielist.filter((datamovies, j) => {
