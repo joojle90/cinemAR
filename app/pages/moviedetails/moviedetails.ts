@@ -21,7 +21,7 @@ export class MoviedetailsPage {
         this.getmoviedetails = this.navParams.data;
         this.trustlink = "https://www.youtube.com/embed/"+this.navParams.data.moviedetails.trailer;
         this.youtubelink = this.sanitizer.bypassSecurityTrustResourceUrl(this.trustlink);
-        console.log(this.navParams.data.moviedetails.trailer);
+        console.log(this.navParams.data);
     }
 
     bookticket(getmovieitems) {
@@ -30,7 +30,9 @@ export class MoviedetailsPage {
             movieid: getmovieitems.movieid,
             movieimage: getmovieitems.image,
             movienames: getmovieitems.movienames,
-            moviediscount: getmovieitems.discount
+            moviediscount: getmovieitems.discount,
+            cinemastatus: getmovieitems.cinemastatus,
+            cinemaid: this.navParams.data['cinemaid']
         });
     }
 

@@ -32,13 +32,18 @@ export class BookticketPage {
         this.loadcinemaselection(this.navParams.data['movieid']);
 
         this.idmovie = this.navParams.data['movieid'];
-        console.log(this.navParams.data['cinemastatus']);
+//        console.log(this.navParams.data['cinemaid']);
         this.selectedmovies = {
             movieid: this.idmovie
         }
         this.cinemastatus = this.navParams.data['cinemastatus'];
+        if(this.cinemastatus === true) {
+            this.selectedcinema = this.navParams.data['cinemaid'];
+            this.cinemaChange(this.selectedcinema)
+        } else {
+            this.selectedcinema = "";
+        }
 
-        this.selectedcinema = "";
         this.selecteddate = "";
         this.selectedtime = "";
         this.selectedticket = "";

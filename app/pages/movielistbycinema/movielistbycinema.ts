@@ -85,18 +85,19 @@ export class MovielistbycinemaPage {
     }
 
     bookticket(getmovieitems) {
-        console.log(getmovieitems);
+//        console.log(getmovieitems);
         this.navCtrl.push(BookticketPage, {
             movieid: getmovieitems.movieid,
             movieimage: getmovieitems.image_land,
             movienames: getmovieitems.moviename,
             moviediscount: getmovieitems.discount,
-            cinemastatus: getmovieitems.cinemastatus
+            cinemastatus: getmovieitems.cinemastatus,
+            cinemaid: this.navParams.data['cinemaid']
         });
     }
 
     watchtrailer(movieitems, moviedetails) {
-        console.log(movieitems);
+//        console.log(movieitems);
         let showa = movieitems.showtime.split(" ");
         let theshow = new Date (showa[2], monthname.indexOf(showa[1].toLowerCase()), showa[0]);
 
@@ -108,7 +109,9 @@ export class MovielistbycinemaPage {
             likes: movieitems.like,
             moviedetails: moviedetails,
             discount: movieitems.discount,
-            comingshow: theshow > new Date() ?  1 : 0
+            comingshow: theshow > new Date() ?  1 : 0,
+            cinemastatus: movieitems.cinemastatus,
+            cinemaid: this.navParams.data['cinemaid']
         });
     }
 
