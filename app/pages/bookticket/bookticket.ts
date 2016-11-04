@@ -12,6 +12,7 @@ export class BookticketPage {
     selectioncinemasDD: string[];
     selectiondatesDD: string[];
     selectiontimeDD: string[];
+    cinemastatus: any;
     selectedmovies: any;
     selectedcinema: any;
     selecteddate: any;
@@ -31,10 +32,12 @@ export class BookticketPage {
         this.loadcinemaselection(this.navParams.data['movieid']);
 
         this.idmovie = this.navParams.data['movieid'];
-
+        console.log(this.navParams.data['cinemastatus']);
         this.selectedmovies = {
             movieid: this.idmovie
         }
+        this.cinemastatus = this.navParams.data['cinemastatus'];
+
         this.selectedcinema = "";
         this.selecteddate = "";
         this.selectedtime = "";
@@ -51,7 +54,7 @@ export class BookticketPage {
 
     loadcinemaselection(movieid: any) {
         return this.cinemardata.getSelectionCinemaDD(movieid).then(data => {
-            console.log(data);
+//            console.log(data);
             this.selectioncinemasDD = data.sort((a,b) => {
                 return a.cinemaname.localeCompare(b.cinemaname);
             });

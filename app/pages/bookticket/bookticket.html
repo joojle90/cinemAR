@@ -26,8 +26,16 @@
             </ion-select>
         </ion-item>
 
-        <ion-item>
+        <ion-item [hidden]="cinemastatus === true">
             <ion-label>Cinema</ion-label>
+            <ion-select [(ngModel)]="selectedcinema" (ionChange)="cinemaChange(selectedcinema)" [disabled]="selectedmovies.movieid === '' ? true : false">
+                <ion-option value="" disabled selected>Select your cinema</ion-option>
+                <ion-option *ngFor="let cndd of selectioncinemasDD" [value]="cndd.cinemaid">{{cndd.cinemaname}}</ion-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item [hidden]="cinemastatus !== true">
+            <ion-label>Cinemasss</ion-label>
             <ion-select [(ngModel)]="selectedcinema" (ionChange)="cinemaChange(selectedcinema)" [disabled]="selectedmovies.movieid === '' ? true : false">
                 <ion-option value="" disabled selected>Select your cinema</ion-option>
                 <ion-option *ngFor="let cndd of selectioncinemasDD" [value]="cndd.cinemaid">{{cndd.cinemaname}}</ion-option>

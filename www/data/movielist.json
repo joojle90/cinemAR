@@ -578,7 +578,7 @@
         "image_land": "unspoken.jpg",
         "showtime": "04 Nov 2016",
         "endshow": "05 Nov 2016",
-        "like": 4354,
+        "like": 354,
         "duration": 90,
         "discount": 0,
         "moviedetails": [{
@@ -750,6 +750,154 @@
             "cinemaid": "CNSH003",
             "cinemaname": "Bangi Giant"
         },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0021",
+        "moviename": "The Accountant",
+        "image_small": "the_accountant.jpg",
+        "image_potr": "the_accountant.jpg",
+        "image_land": "the_accountant.jpg",
+        "showtime": "20 Oct 2016",
+        "endshow": "22 Oct 2016",
+        "like": 7562,
+        "duration": 128,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "A socially-weird government accountant may be mild-mannered during the day but after hours, he moonlights as a highly trained assassin. ",
+            "trailer": "DBfsgcswlYQ",
+            "audience": 18,
+            "genre": [{
+                "genrename": "Thriller"
+            },{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Gavin O'Connor"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0022",
+        "moviename": "The Hunger Games:Mocking Jay",
+        "image_small": "the_hunger_game.jpg",
+        "image_potr": "the_hunger_game.jpg",
+        "image_land": "the_hunger_game.jpg",
+        "showtime": "02 Nov 2016",
+        "endshow": "04 Nov 2016",
+        "like": 4578,
+        "duration": 137,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "As the war of Panem escalates to the destruction of other districts, Katniss Everdeen, the reluctant leader of the rebellion, must bring together an army against President Snow, while all she holds dear hangs in the balance.",
+            "trailer": "mfmrPu43DF8",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Thriller"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            },{
+                "lang": "English"
+            }],
+            "directedby": "Francis Lawrence"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        },{
+            "cinemaid": "CNSH004",
+            "cinemaname": "Kajang International Trade Center"
+        },{
+            "cinemaid": "CNSH005",
+            "cinemaname": "Serdang Square"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0023",
+        "moviename": "Spectre",
+        "image_small": "spectre.jpg",
+        "image_potr": "spectre.jpg",
+        "image_land": "spectre.jpg",
+        "showtime": "06 Nov 2016",
+        "endshow": "08 Nov 2016",
+        "like": 6936,
+        "duration": 148,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "A cryptic message from Bond's past sends him on a trail to uncover a sinister organization. While M battles political forces to keep the secret service alive, Bond peels back the layers of deceit to reveal the terrible truth behind SPECTRE.",
+            "trailer": "7GqClqvlObY",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Thriller"
+            },{
+                "genrename": "Action"
+            },{
+                "genrename": "Adventure"
+            }],
+            "subtitle": [{
+                "lang": "Malay"
+            }],
+            "directedby": "Sam Mendes"
+        }],
+        "cinemamovie": [{
+            "cinemaid": "CNSH001",
+            "cinemaname": "Great Mall Putra"
+        },{
+            "cinemaid": "CNSH003",
+            "cinemaname": "Bangi Giant"
+        }],
+        "status": "active"
+    },
+    {
+        "movieid": "CNMV0024",
+        "moviename": "Polis Evo",
+        "image_small": "polis_evo.jpg",
+        "image_potr": "polis_evo.jpg",
+        "image_land": "polis_evo.jpg",
+        "showtime": "17 Sep 2016",
+        "endshow": "18 Sep 2016",
+        "like": 54679,
+        "duration": 120,
+        "discount": 0,
+        "moviedetails": [{
+            "synopsis": "Big city cop meets small town big cop in Polis Evo - Combines two contrasting personalities from completely different backgrounds on a mission to take down Malaysia's biggest drug lord. Khai is Kuala Lumpur's finest narcotics inspector. When an old chemistry teacher, is found dead in Terengganu with bags of the same red meth that Khai has been tracking, Khai is sent to the small town to investigate and solve the case. There, he is partnered with Sani, a happy-go-lucky family man proud and satisfied with his life in Terengganu. The reluctant and mismatched pair is made to work together to solve the mystery of the drugs. But the duo soon discovers that this is no ordinary drug case. After a tragic turn of events, their mission becomes increasingly personal. Sani and Khai must learn to work together and to trust each other as they venture into war with a cold-blooded syndicate that would do anything to keep their drug business alive.",
+            "trailer": "1AdTm41WhlY",
+            "audience": 13,
+            "genre": [{
+                "genrename": "Action"
+            }],
+            "subtitle": [{
+                "lang": "English"
+            }],
+            "directedby": "Ghaz Abu Bakar"
+        }],
+        "cinemamovie": [{
             "cinemaid": "CNSH004",
             "cinemaname": "Kajang International Trade Center"
         },{

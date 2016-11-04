@@ -90,7 +90,8 @@ export class MovielistbycinemaPage {
             movieid: getmovieitems.movieid,
             movieimage: getmovieitems.image_land,
             movienames: getmovieitems.moviename,
-            moviediscount: getmovieitems.discount
+            moviediscount: getmovieitems.discount,
+            cinemastatus: getmovieitems.cinemastatus
         });
     }
 

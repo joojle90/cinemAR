@@ -4,7 +4,7 @@
         "genrename": "Adventure",
         "description": "Adventure description",
         "image": "adventure.jpg",
-        "total": 4
+        "total": 5
     },{
         "genreid": "CNGR002",
         "genrename": "Sci-fi",
@@ -22,13 +22,13 @@
         "genrename": "Action",
         "description": "Action description",
         "image": "action.jpg",
-        "total": 11
+        "total": 14
     },{
         "genreid": "CNGR005",
         "genrename": "Thriller",
         "description": "Thriller description",
         "image": "thriller.jpg",
-        "total": 5
+        "total": 8
     },{
         "genreid": "CNGR006",
         "genrename": "Romance",
