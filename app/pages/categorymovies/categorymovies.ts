@@ -21,7 +21,7 @@ export class CategorymoviesPage {
     ) {
         this.getmoviecategories = this.navParams.data.genrename;
         this.loadcategoryMovieslist(this.getmoviecategories);
-        console.log(this.getmoviecategories);
+//        console.log(this.getmoviecategories);
     }
 
     loadcategoryMovieslist(thegenre: string) {
@@ -50,22 +50,18 @@ export class CategorymoviesPage {
                 let datesortB = b.showtime.split(" ");
                 let newdateA = new Date (datesortA[2], monthname.indexOf(datesortA[1].toLowerCase()), datesortA[0]);
                 let newdateB = new Date (datesortB[2], monthname.indexOf(datesortB[1].toLowerCase()), datesortB[0]);
-                console.log(newdateA);
-                console.log(newdateB);
                 return newdateB > newdateA ? 1 : -1;
             });
 
             this.moviesbycategories = movielist.filter((datamovies, j) => {
                 for (let i in datamovies.genrename) {
                     if(datamovies.genrename[i].genrename === thegenre && movielist[j].moviestatus === "active") {
-//                        console.log(movielist[j]);
                         this.moviesbycategories = movielist[j]
                         return this.moviesbycategories;
                     }
                 }
             });
-
-            console.log(this.moviesbycategories);
+//            console.log(this.moviesbycategories);
         })
     }
 

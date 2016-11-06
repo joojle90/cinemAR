@@ -1,4 +1,112 @@
 .selectseats {
+    ion-list {
+        margin: 0;
+
+        .legend {
+            color: #f2ff57;
+        }
+        .available {
+            color: #fff !important;
+        }
+        .selection {
+            color: #fff900 !important;
+        }
+        .booked {
+            color: #5efff4 !important;
+        }
+        .sold {
+            color: #08ff33 !important;
+        }
+
+        ion-row {
+            padding: 5px;
+            ion-col {
+                padding: 0;
+                color: #fff;
+                ion-icon {
+                    color: #ffd75c;
+                    margin-right: 10px;
+                }
+                a {
+                    text-decoration: inherit;
+                }
+                ion-icon {
+                    padding-right: 5px;
+                }
+                span {
+                    color: #00ffb1;
+                }
+            }
+        }
+    }
+    .btnseats {
+        text-align: center;
+
+        button {
+            background-color: #556ca0;
+        }
+    }
+
+    /*IMAGE QR CODE PREVIEW TICKET #ffd188*/
+    ion-card {
+        margin: 0;
+        width: calc(100% - 0px);
+        background: inherit;
+
+        div.qrcode {
+            position: relative;
+            width: 50%;
+            left: 25%;
+        }
+        p {
+            font-size: 1.7em;
+            color: #fff133;
+        }
+
+        ion-label {
+            h1 {
+                color: #fff;
+            }
+        }
+
+        ion-col {
+            span {
+                color: #fff;
+            }
+        }
+    }
+    button[fab].fab-map {
+        top: calc(100% - 35px);
+        z-index: 50;
+        background-color: #556ca0;
+    }
+    ion-item {
+        border-top: 1px outset;
+
+        span {
+            font-size: 1.2rem;
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+
+        h2 {
+            white-space: normal;
+            width: 80%;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            text-transform: capitalize;
+        }
+
+        .button-inner {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+    }
+    .item {
+        background-color: inherit;
+    }
+
     /*SELECT SEAT*/
     *,
     *:before,
@@ -6,7 +114,7 @@
         box-sizing: border-box;
     }
     .cinema {
-        margin: 5px auto;
+        margin: 0 auto;
         max-width: 300px;
     }
     .hallroom {
@@ -35,7 +143,7 @@
     }
     .exit {
         position: relative;
-        height: 100px;
+        height: 50px;
         &:before,
         &:after {
             content: "EXIT";

@@ -5,6 +5,8 @@ import 'rxjs/add/operator/map';
 //let serverURL = 'http://cinemar.myxscan.net/api/Movie/';
 //let serverURL = '/api/Movie/'; // Json web api
 let serverURL = 'data/';
+let monthname = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug",
+                 "sep", "oct", "nov", "dec"];
 
 @Injectable()
 export class CinemarData {
@@ -80,8 +82,14 @@ export class CinemarData {
         return this.load('movielist.json').then(data => {
             let movieselection: any = [];
 
-            for (let c in data.movielist) {
-                let s = data.movielist[c];
+            let movieitems = data.movielist.filter(themovie => {
+                let datea = themovie.showtime.split(" ");
+                let thedate = new Date (datea[2], monthname.indexOf(datea[1].toLowerCase()), datea[0]);
+                return thedate < new Date() && themovie.status === "active";
+            });
+
+            for (let c in movieitems) {
+                let s = movieitems[c];
                 movieselection.push({
                         movieid: s.movieid,
                         moviename: s.moviename

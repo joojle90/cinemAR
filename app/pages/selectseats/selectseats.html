@@ -8,13 +8,36 @@
 </ion-header>
 
 <ion-content class="selectseats">
+    <ion-list>
+        <ion-list-header class="legend">Legend</ion-list-header>
+        <ion-grid padding>
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="bookmark" class="available"></ion-icon>
+                    Available seats
+                </ion-col>
+                <ion-col width-50>
+                    <ion-icon name="bookmark" class="booked"></ion-icon>
+                    Booked seats
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col width-50>
+                    <ion-icon name="bookmark" class="selection"></ion-icon>
+                    Selection seats
+                </ion-col>
+                <ion-col width-50>
+                    <ion-icon name="bookmark" class="sold"></ion-icon>
+                    Sold seats
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-list>
     <div class="cinema">
         <div class="hallroom">
             <h1>SCREEN</h1>
         </div>
-        <div class="exit exit--front fuselage">
-
-        </div>
+        <div class="exit exit--front fuselage"></div>
         <ol class="cabin fuselage">
             <li class="row row--1">
                 <ol class="seats" type="A">
@@ -297,8 +320,20 @@
                 </ol>
             </li>
         </ol>
-        <div class="exit exit--back fuselage">
-
-        </div>
+        <div class="exit exit--back fuselage"></div>
     </div>
+    <ion-row class="btnseats" padding>
+        <ion-col width-50>
+            <button ion-button round icon-left (click)="viewticket()">
+                <ion-icon name='lock' is-active="false"></ion-icon>
+                Book
+            </button>
+        </ion-col>
+        <ion-col width-50>
+            <button ion-button round icon-left (click)="payment()">
+                <ion-icon name='card' is-active="false"></ion-icon>
+                Pay
+            </button>
+        </ion-col>
+    </ion-row>
 </ion-content>

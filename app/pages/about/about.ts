@@ -18,7 +18,7 @@ export class AboutPage {
     mapshow() {
         let alert = this.alertCtrl.create({
           title: 'Coming Soon',
-          subTitle: 'We will update our Map',
+          subTitle: 'We will update our Map soon',
           buttons: ['OK']
         });
         alert.present();

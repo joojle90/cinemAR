@@ -18,6 +18,7 @@ export class BookticketPage {
     selecteddate: any;
     selectedtime: any;
     selectedticket: any;
+    movielbl: any; cinemalbl: any; datelbl: any; timelbl: any;
 
     idmovie: string;
 
@@ -70,7 +71,7 @@ export class BookticketPage {
         this.selecteddate = "";
         return this.cinemardata.getSelectionDateDD(this.idmovie, selectedcinema).then(data => {
             this.selectiondatesDD = data;
-            console.log(data);
+//            console.log(data);
         });
     }
 
@@ -78,13 +79,13 @@ export class BookticketPage {
         this.selectedtime = "";
         return this.cinemardata.getSelectionTimeDD(selecteddate).then(data => {
             this.selectiontimeDD = data;
-            console.log(data);
+//            console.log(data);
         });
     }
 
     timeChange(selectedtime) {
         this.selectedticket = "";
-        console.log(selectedtime);
+//        console.log(selectedtime);
     }
 
     ticketchange(selectedticket) {
@@ -93,6 +94,10 @@ export class BookticketPage {
 
     selectseats() {
         this.navCtrl.push(SelectseatsPage, {
+            moviename: this.selectedmovies['movieid'],
+            cinema: this.selectedcinema,
+            moviedate: this.selecteddate,
+            movietime: this.selectedtime,
             totalticket: this.selectedticket
         });
     }

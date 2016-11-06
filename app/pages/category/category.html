@@ -14,6 +14,8 @@
         <img src="img/category/{{grl.image}}" />
         <p class="card-style-title">{{grl.genrename}}</p>
         <p class="card-style-subtitle"><span>{{grl.total}}</span> Movies Available</p>
-        <button class="card-style-details" (click)="moviebygenre(grl.genrename)">More details</button>
+        <button ion-button class="card-style-details" icon-left (click)="moviebygenre(grl.genrename)">
+            <ion-icon name='grid'></ion-icon>More details
+        </button>
     </ion-card>
 </ion-content>
